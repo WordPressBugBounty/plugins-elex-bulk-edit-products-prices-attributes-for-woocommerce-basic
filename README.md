@@ -1,0 +1,1 @@
+# plugins-elex-bulk-edit-products-prices-attributes-for-woocommerce-basic
