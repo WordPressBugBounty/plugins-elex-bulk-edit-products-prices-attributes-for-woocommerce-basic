@@ -1,0 +1,1092 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ELEX WooCommerce Bulk Edit Products, Prices & Attributes "
+"(Basic)\n"
+"POT-Creation-Date: 2021-10-11 16:54+0530\n"
+"PO-Revision-Date: 2021-10-11 17:01+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: elex-bulk-edit-woocommerce-products-basic.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: elex-bulk-edit-woocommerce-products-basic.php:27
+msgid ""
+"PREMIUM Version of this Plugin Installed. Please uninstall the PREMIUM "
+"Version before activating BASIC."
+msgstr ""
+"УСТАНОВЛЕНА ПРЕМИУМ версия этого плагина. Пожалуйста, удалите версию PREMIUM "
+"перед активацией BASIC."
+
+#: elex-bulk-edit-woocommerce-products-basic.php:32
+msgid ""
+"Woocommerce Version of this Plugin Installed. Please uninstall the "
+"Woocommerce Version before activating BASIC."
+msgstr ""
+"Woocommerce Версия этого плагина установлена. Пожалуйста, удалите версию "
+"Woocommerce перед активацией BASIC."
+
+#: elex-bulk-edit-woocommerce-products-basic.php:49
+msgid ""
+"<strong>WooCommerce</strong> plugin must be active for <strong>ELEX Bulk "
+"Edit Products, Prices & Attributes for Woocommerce- Basic</strong> to work."
+msgstr ""
+"<strong>Плагин WooCommerce</strong> должен быть активен для <strong>ELEX "
+"Bulk Edit Products, Prices & Attributes for Woocommerce- Basic</strong> для "
+"работы."
+
+#: elex-bulk-edit-woocommerce-products-basic.php:78
+msgid "Bulk Edit Products"
+msgstr "Массовое редактирование продуктов"
+
+#: elex-bulk-edit-woocommerce-products-basic.php:79
+msgid "Premium Upgrade"
+msgstr "Обновить до премиум версии"
+
+#: elex-bulk-edit-woocommerce-products-basic.php:80
+msgid "Support"
+msgstr "Поддержка"
+
+#: includes/elex-class-bulk-edit-init.php:72
+msgid "Attribute Values (Existing)"
+msgstr "Значения атрибутов (существующие)"
+
+#: includes/elex-class-bulk-edit-init.php:73
+msgid "Select the Attribute value(s) for which the filter has to be applied"
+msgstr "Выберите значение атрибута, к которому должен быть применен фильтр"
+
+#: includes/elex-class-bulk-edit-init.php:74
+msgid "Select Attributes Values"
+msgstr "Выбор значений атрибутов"
+
+#: includes/elex-class-bulk-edit-init.php:75
+msgid "Desired Price"
+msgstr "Желаемая цена"
+
+#: includes/elex-class-bulk-edit-init.php:76
+msgid "Minimum Price"
+msgstr "Минимальная цена"
+
+#: includes/elex-class-bulk-edit-init.php:77
+msgid "Maximum Price"
+msgstr "Максимальная цена"
+
+#: includes/elex-class-bulk-edit-init.php:78
+msgid "Do you want to Proceed?"
+msgstr "Вы хотите продолжить?"
+
+#: includes/elex-class-bulk-edit-init.php:79
+#: includes/elex-class-bulk-edit-init.php:88
+msgid "Yes, Proceed"
+msgstr "Да, обновить"
+
+#: includes/elex-class-bulk-edit-init.php:80
+#: includes/elex-class-bulk-edit-init.php:83
+#: includes/elex-class-bulk-edit-init.php:89
+#: includes/elex-class-bulk-edit-init.php:93
+msgid "No, Wait"
+msgstr "Нет подождите"
+
+#: includes/elex-class-bulk-edit-init.php:81
+msgid "Proceed with Update?"
+msgstr "Продолжить обновление?"
+
+#: includes/elex-class-bulk-edit-init.php:82
+msgid "Yes, Update"
+msgstr "Да, обновить"
+
+#: includes/elex-class-bulk-edit-init.php:84
+msgid "Proceed with Undo Update?"
+msgstr "Продолжить с отменой обновления?"
+
+#: includes/elex-class-bulk-edit-init.php:85
+msgid "This operation can not be reversed "
+msgstr "Эта операция не может быть отменена "
+
+#: includes/elex-class-bulk-edit-init.php:86
+msgid "Undo the Previous Update?"
+msgstr "Отменить предыдущее обновление?"
+
+#: includes/elex-class-bulk-edit-init.php:87
+msgid "Click Proceed to see the Update Details."
+msgstr "Нажмите кнопку Продолжить, чтобы просмотреть сведения об обновлении."
+
+#: includes/elex-class-bulk-edit-init.php:90
+msgid "Are you Sure ?"
+msgstr "Уверен?"
+
+#: includes/elex-class-bulk-edit-init.php:91
+msgid "Do you want to Reset?"
+msgstr "Вы хотите сбросить настройки?"
+
+#: includes/elex-class-bulk-edit-init.php:92
+msgid "Yes, Reset"
+msgstr "Да, Сброс"
+
+#: includes/elex-class-bulk-edit-init.php:94
+msgid "New Title"
+msgstr "Новый заголовок"
+
+#: includes/elex-class-bulk-edit-init.php:95
+msgid "Append Title"
+msgstr "Добавить заголовок"
+
+#: includes/elex-class-bulk-edit-init.php:96
+msgid "Prepend Title"
+msgstr "Заголовок предварки"
+
+#: includes/elex-class-bulk-edit-init.php:97
+#: includes/elex-class-bulk-edit-init.php:102
+msgid "Text to be Replaced"
+msgstr "Текст, который необходимо заменить"
+
+#: includes/elex-class-bulk-edit-init.php:98
+#: includes/elex-class-bulk-edit-init.php:103
+msgid "Replace Text"
+msgstr "Замена текста"
+
+#: includes/elex-class-bulk-edit-init.php:99
+msgid "New SKU"
+msgstr "Новый SKU"
+
+#: includes/elex-class-bulk-edit-init.php:100
+msgid "Append SKU"
+msgstr "Добавить SKU"
+
+#: includes/elex-class-bulk-edit-init.php:101
+msgid "Prepend SKU"
+msgstr "Предварять SKU"
+
+#: includes/elex-class-bulk-edit-init.php:104
+msgid "Product"
+msgstr "Товар"
+
+#: includes/elex-class-bulk-edit-init.php:105
+msgid "Variations"
+msgstr "Вариации"
+
+#: includes/elex-class-bulk-edit-init.php:106
+msgid "Increase Percentage"
+msgstr "Увеличение процента"
+
+#: includes/elex-class-bulk-edit-init.php:107
+msgid "Nearest Value"
+msgstr "Ближайшее значение"
+
+#: includes/elex-class-bulk-edit-init.php:108
+msgid "Decrease Percentage"
+msgstr "Процент снижения"
+
+#: includes/elex-class-bulk-edit-init.php:109
+msgid "Increase Price"
+msgstr "Увеличить цену"
+
+#: includes/elex-class-bulk-edit-init.php:110
+msgid "Set Flat Price to All"
+msgstr "Установите фиксированную цену на все"
+
+#: includes/elex-class-bulk-edit-init.php:111
+msgid "Decrease Price"
+msgstr "Снизить цену"
+
+#: includes/elex-class-bulk-edit-init.php:112
+msgid "Value to Add"
+msgstr "Ценность для добавления"
+
+#: includes/elex-class-bulk-edit-init.php:113
+msgid "Value to Subtract"
+msgstr "Значение для вычитания"
+
+#: includes/elex-class-bulk-edit-init.php:114
+msgid "Value to Replace"
+msgstr "Значение для замены"
+
+#: includes/elex-class-bulk-edit-init.php:115
+msgid "Shipping Unit Will be Added"
+msgstr "Будет добавлен блок доставки"
+
+#: includes/elex-class-bulk-edit-init.php:116
+msgid "Shipping Unit Will be Subtracted"
+msgstr "Единица отгрузки будет вычтена"
+
+#: includes/elex-class-bulk-edit-init.php:117
+msgid "Shipping Unit Will be Replaced"
+msgstr "Будет заменена отгрузка"
+
+#: includes/elex-class-bulk-edit-init.php:118
+msgid "Update Successful"
+msgstr "Обновление выполнено успешно"
+
+#: includes/elex-class-bulk-edit-init.php:119
+msgid "Undo Update Successful"
+msgstr "Отмена обновления выполнена успешно"
+
+#: includes/elex-class-bulk-edit-init.php:120
+msgid "OK"
+msgstr "OK"
+
+#: includes/elex-class-bulk-edit-init.php:230
+msgid "Bulk Edit "
+msgstr "Массовое редактирование "
+
+#: includes/elex-class-bulk-edit-init.php:231
+#: templates/elex-template-frontend-settings-tab-fields.php:8
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/elex-class-bulk-edit-init.php:232
+msgid "<span style='color:red;font-size:16px'>Go Premium!</span>"
+msgstr "<span style='color:red;font-size:16px'>Идите Премиум!</span>"
+
+#. translators: %s:  print total items
+#: includes/elex-class-table-data.php:233
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s объект"
+msgstr[1] "%s объект"
+msgstr[2] "%s объект"
+
+#: templates/elex-template-frontend-filters.php:19
+msgid "Check your Increase/Decrease Percentage to get back old price."
+msgstr ""
+"Проверьте свой процент увеличения / уменьшения, чтобы вернуть старую цену."
+
+#: templates/elex-template-frontend-filters.php:19
+msgid "Generate Percentage"
+msgstr "Сгенерировать процент"
+
+#: templates/elex-template-frontend-filters.php:20
+msgid "Click to undo the last update you have done"
+msgstr "Нажмите, чтобы отменить последнее обновление, которое вы сделали"
+
+#: templates/elex-template-frontend-filters.php:20
+msgid "Undo Last Update"
+msgstr "Отменить последнее обновление"
+
+#: templates/elex-template-frontend-filters.php:27
+msgid "Product Title"
+msgstr "Название продукта"
+
+#: templates/elex-template-frontend-filters.php:30
+msgid "Select a condition from the drop-down and enter a product title"
+msgstr "Выберите условие из раскрывающегося списка и введите название продукта"
+
+#: templates/elex-template-frontend-filters.php:34
+#: templates/elex-template-frontend-filters.php:135
+msgid "All"
+msgstr "Все"
+
+#: templates/elex-template-frontend-filters.php:43
+#: templates/elex-template-frontend-tables.php:86
+#: templates/elex-template-frontend-tables.php:126
+msgid "Select Flags (Optional)"
+msgstr "Выберите Флаги (необязательно)"
+
+#: templates/elex-template-frontend-filters.php:69
+msgid "Product Types"
+msgstr "Тип Продукта"
+
+#: templates/elex-template-frontend-filters.php:72
+msgid "Select the product type(s) for which the filter has to be applied"
+msgstr "Выберите тип продукта, для которого должен быть применен фильтр"
+
+#: templates/elex-template-frontend-filters.php:76
+msgid "Select Product Types"
+msgstr "Выберите типы продуктов"
+
+#: templates/elex-template-frontend-filters.php:89
+msgid "Product Categories"
+msgstr "Категории товаров"
+
+#: templates/elex-template-frontend-filters.php:92
+msgid ""
+"Select the category(s) for which the filter has to be applied. Enable the "
+"checkbox to include subcategories"
+msgstr ""
+"Выберите категории, к которым должен быть применен фильтр. Установите флажок "
+"для включения подкатегорий"
+
+#: templates/elex-template-frontend-filters.php:128
+msgid "Product Regular Price"
+msgstr "Обычная цена товара"
+
+#: templates/elex-template-frontend-filters.php:131
+msgid "Select a condition and specify a price"
+msgstr "Выберите условие и укажите цену"
+
+#: templates/elex-template-frontend-filters.php:139
+msgid "Between"
+msgstr "Между"
+
+#: templates/elex-template-frontend-filters.php:146
+#: templates/elex-template-frontend-tables.php:573
+msgid "Attributes"
+msgstr "Атрибуты"
+
+#: templates/elex-template-frontend-filters.php:152
+msgid "Product Attributes (Group with OR)"
+msgstr "Атрибуты продукта (группировка с ИЛИ)"
+
+#: templates/elex-template-frontend-filters.php:155
+msgid ""
+"The products will be filtered when any one of the attributes and it's "
+"corresponding values are present"
+msgstr ""
+"Продукты будут отфильтрованы при наличии любого из атрибутов и "
+"соответствующих ему значений"
+
+#: templates/elex-template-frontend-filters.php:171
+msgid "Product Attributes (Group with AND)"
+msgstr "Атрибуты продукта (группировка с помощью AND)"
+
+#: templates/elex-template-frontend-filters.php:174
+msgid ""
+"The products will be filtered only when both attributes and it's "
+"corresponding values are present"
+msgstr ""
+"Продукты будут фильтроваться только при наличии обоих атрибутов и "
+"соответствующих им значений"
+
+#: templates/elex-template-frontend-filters.php:193
+#: templates/elex-template-frontend-tables.php:377
+#: templates/elex-template-frontend-tables.php:750
+msgid "Enable"
+msgstr "Включить"
+
+#: templates/elex-template-frontend-filters.php:199
+msgid "Exclude by IDs"
+msgstr "Исключение по идентификаторам"
+
+#: templates/elex-template-frontend-filters.php:202
+msgid ""
+"Enter the Product IDs to exclude from getting updated (separate IDs by "
+"comma)."
+msgstr ""
+"Введите идентификаторы продуктов, чтобы исключить из обновления (разделяйте "
+"идентификаторы запятыми)."
+
+#: templates/elex-template-frontend-filters.php:211
+msgid "Exclude by Categories"
+msgstr "Исключить по категориям"
+
+#: templates/elex-template-frontend-filters.php:216
+msgid ""
+"Select the categories to exclude products from getting updated. All the "
+"subcategories under a parent category will be excluded if you enable "
+"'Include Subcategories' checkbox."
+msgstr ""
+"Выберите категории, чтобы исключить продукты из обновления. Все подкатегории "
+"родительской категории будут исключены, если вы установите флажок «Включить "
+"подкатегории»."
+
+#: templates/elex-template-frontend-filters.php:242
+msgid "Reset Filter"
+msgstr "Сбросить фильтр"
+
+#: templates/elex-template-frontend-filters.php:243
+msgid "Preview Filtered Products"
+msgstr "Предварительный просмотр отфильтрованных продуктов"
+
+#: templates/elex-template-frontend-filters.php:278
+#: templates/elex-template-frontend-tables.php:870
+msgid "No categories found."
+msgstr "Категории не найдены."
+
+#: templates/elex-template-frontend-settings-tab-fields.php:17
+msgid "Enter custom meta keys seperated by comma."
+msgstr "Введите пользовательские мета-ключи, разделенные запятыми."
+
+#: templates/elex-template-frontend-settings-tab-fields.php:25
+msgid "Save"
+msgstr "Сохранить"
+
+#: templates/elex-template-frontend-tables.php:23
+msgid "Process Edit"
+msgstr "Редактирование процесса"
+
+#: templates/elex-template-frontend-tables.php:33
+msgid "Apply"
+msgstr "Применить"
+
+#: templates/elex-template-frontend-tables.php:39
+#: templates/elex-template-frontend-tables.php:814
+msgid "Back"
+msgstr "Назад"
+
+#: templates/elex-template-frontend-tables.php:40
+#: templates/elex-template-frontend-tables.php:55
+#: templates/elex-template-frontend-tables.php:815
+msgid "Cancel"
+msgstr "Отмена"
+
+#: templates/elex-template-frontend-tables.php:41
+#: templates/elex-template-frontend-tables.php:56
+msgid "Continue"
+msgstr "Продолжить"
+
+#: templates/elex-template-frontend-tables.php:51
+msgid "Updating the products. Do not refresh..."
+msgstr "Обновление продуктов. Не обновлять..."
+
+#: templates/elex-template-frontend-tables.php:63
+msgid "Update the Products"
+msgstr "Обновление продуктов"
+
+#: templates/elex-template-frontend-tables.php:63
+msgid ""
+"Enable this Undo option to revert back your current update. But it will "
+"override your previous update."
+msgstr ""
+"Включите этот параметр Отмены, чтобы вернуть текущее обновление. Но он "
+"переопределит предыдущее обновление."
+
+#: templates/elex-template-frontend-tables.php:69
+msgid "Title"
+msgstr "Заголовок"
+
+#: templates/elex-template-frontend-tables.php:72
+msgid "Select a condition to edit the title, and enter the relevant text"
+msgstr ""
+"Выберите условие для редактирования заголовка и введите соответствующий текст"
+
+#: templates/elex-template-frontend-tables.php:76
+#: templates/elex-template-frontend-tables.php:116
+#: templates/elex-template-frontend-tables.php:156
+#: templates/elex-template-frontend-tables.php:175
+#: templates/elex-template-frontend-tables.php:194
+#: templates/elex-template-frontend-tables.php:317
+#: templates/elex-template-frontend-tables.php:337
+#: templates/elex-template-frontend-tables.php:376
+#: templates/elex-template-frontend-tables.php:392
+#: templates/elex-template-frontend-tables.php:409
+#: templates/elex-template-frontend-tables.php:426
+#: templates/elex-template-frontend-tables.php:449
+#: templates/elex-template-frontend-tables.php:467
+#: templates/elex-template-frontend-tables.php:484
+#: templates/elex-template-frontend-tables.php:502
+#: templates/elex-template-frontend-tables.php:527
+#: templates/elex-template-frontend-tables.php:556
+#: templates/elex-template-frontend-tables.php:588
+#: templates/elex-template-frontend-tables.php:708
+#: templates/elex-template-frontend-tables.php:749
+#: templates/elex-template-frontend-tables.php:780
+#: templates/elex-template-frontend-tables.php:807
+msgid "< No Change >"
+msgstr "< Без изменений >"
+
+#: templates/elex-template-frontend-tables.php:77
+#: templates/elex-template-frontend-tables.php:117
+msgid "Set New"
+msgstr "Установить Новый"
+
+#: templates/elex-template-frontend-tables.php:78
+#: templates/elex-template-frontend-tables.php:118
+#: templates/elex-template-frontend-tables.php:220
+#: templates/elex-template-frontend-tables.php:247
+msgid "Append"
+msgstr "Добавить"
+
+#: templates/elex-template-frontend-tables.php:79
+#: templates/elex-template-frontend-tables.php:119
+#: templates/elex-template-frontend-tables.php:221
+#: templates/elex-template-frontend-tables.php:248
+msgid "Prepend"
+msgstr "Добавить в начало"
+
+#: templates/elex-template-frontend-tables.php:80
+#: templates/elex-template-frontend-tables.php:120
+#: templates/elex-template-frontend-tables.php:287
+#: templates/elex-template-frontend-tables.php:395
+#: templates/elex-template-frontend-tables.php:452
+#: templates/elex-template-frontend-tables.php:470
+#: templates/elex-template-frontend-tables.php:487
+#: templates/elex-template-frontend-tables.php:505
+#: templates/elex-template-frontend-tables.php:783
+msgid "Replace"
+msgstr "Заменить"
+
+#: templates/elex-template-frontend-tables.php:81
+#: templates/elex-template-frontend-tables.php:121
+msgid "RegEx Replace"
+msgstr "Замена RegEx"
+
+#: templates/elex-template-frontend-tables.php:109
+msgid "SKU"
+msgstr "Артикул"
+
+#: templates/elex-template-frontend-tables.php:112
+msgid "Select a condition to edit the SKU, and enter the relevant text"
+msgstr ""
+"Выберите условие для изменения номера SKU и введите соответствующий текст"
+
+#: templates/elex-template-frontend-tables.php:149
+msgid "Product Visiblity"
+msgstr "Видимость продукта"
+
+#: templates/elex-template-frontend-tables.php:152
+msgid "Choose which all shop pages the product will be listed on"
+msgstr "Выберите, на каких страницах магазина будет указан продукт"
+
+#: templates/elex-template-frontend-tables.php:157
+msgid "Shop and Search"
+msgstr "Магазин и поиск"
+
+#: templates/elex-template-frontend-tables.php:158
+msgid "Shop"
+msgstr "Магазин"
+
+#: templates/elex-template-frontend-tables.php:159
+msgid "Search"
+msgstr "Поиск"
+
+#: templates/elex-template-frontend-tables.php:160
+msgid "Hidden"
+msgstr "Скрытый"
+
+#: templates/elex-template-frontend-tables.php:166
+msgid "Featured Product"
+msgstr "Рекомендуемые товары"
+
+#: templates/elex-template-frontend-tables.php:170
+msgid "Select an option to make the product(s) Featured or not."
+msgstr "Выберите вариант, чтобы сделать продукт (ы) Рекомендуемым или нет."
+
+#: templates/elex-template-frontend-tables.php:176
+msgid "Yes"
+msgstr "Да"
+
+#: templates/elex-template-frontend-tables.php:177
+msgid "No"
+msgstr "Нет"
+
+#: templates/elex-template-frontend-tables.php:183
+msgid "Shipping Class"
+msgstr "Класс доставки"
+
+#: templates/elex-template-frontend-tables.php:186
+msgid "Select a shipping class that will be added to all the filtered products"
+msgstr ""
+"Выберите класс доставки, который будет добавлен ко всем отфильтрованным "
+"продуктам"
+
+#: templates/elex-template-frontend-tables.php:195
+msgid "No Shipping Class"
+msgstr "Нет класса доставки"
+
+#: templates/elex-template-frontend-tables.php:202
+msgid "< No Shipping Class >"
+msgstr "< Нет класса доставки >"
+
+#: templates/elex-template-frontend-tables.php:212
+msgid "Description Action"
+msgstr "Описание действия"
+
+#: templates/elex-template-frontend-tables.php:215
+msgid ""
+"Select a condition to edit or add the description, and enter the relevant "
+"text."
+msgstr ""
+"Выберите условие для редактирования или добавления описания и введите "
+"соответствующий текст."
+
+#: templates/elex-template-frontend-tables.php:219
+#: templates/elex-template-frontend-tables.php:246
+#: templates/elex-template-frontend-tables.php:284
+msgid "No Change"
+msgstr "Без изменений"
+
+#: templates/elex-template-frontend-tables.php:222
+#: templates/elex-template-frontend-tables.php:249
+msgid "Set new"
+msgstr "Установить новый"
+
+#: templates/elex-template-frontend-tables.php:228
+msgid "Description"
+msgstr "Описание"
+
+#: templates/elex-template-frontend-tables.php:231
+msgid ""
+"Prepend - Enter the text you want to add at the beginning of the current "
+"description. Append - Enter the text you want to add at the end of the "
+"current description. Set new - Enter the text to replace the current "
+"description."
+msgstr ""
+"Предварять - Введите текст, который вы хотите добавить в начале текущего "
+"описания. Добавить — введите текст, который вы хотите добавить, в конце "
+"текущего описания. Set new - Введите текст, чтобы заменить текущее описание."
+
+#: templates/elex-template-frontend-tables.php:239
+msgid "Short Description Action"
+msgstr "Краткое описание действия"
+
+#: templates/elex-template-frontend-tables.php:242
+msgid ""
+"Select a condition to edit or add the short description, and enter the "
+"relevant text."
+msgstr ""
+"Выберите условие для редактирования или добавления краткого описания и "
+"введите соответствующий текст."
+
+#: templates/elex-template-frontend-tables.php:255
+msgid "Short Description"
+msgstr "Краткое описание"
+
+#: templates/elex-template-frontend-tables.php:258
+msgid ""
+"Prepend - Enter the text you want to add at the beginning of the current "
+"short description. Append - Enter the text you want to add at the end of the "
+"current short description. Set new - Enter the text to replace the current "
+"short description."
+msgstr ""
+"Предварять - Введите текст, который вы хотите добавить, в начале текущего "
+"краткого описания. Добавить - Введите текст, который вы хотите добавить, в "
+"конце текущего краткого описания. Set new - Введите текст, чтобы заменить "
+"текущее краткое описание."
+
+#: templates/elex-template-frontend-tables.php:266
+msgid "Product Image"
+msgstr "Изображение товара"
+
+#: templates/elex-template-frontend-tables.php:269
+msgid "Specify an image url to add or replace the product image."
+msgstr ""
+"Укажите URL-адрес изображения, чтобы добавить или заменить изображение "
+"продукта."
+
+#: templates/elex-template-frontend-tables.php:277
+msgid "Product Gallery Images Action"
+msgstr "Галерея продуктов Изображения Действие"
+
+#: templates/elex-template-frontend-tables.php:280
+msgid "Select a condition to modify product gallery images."
+msgstr "Выберите условие для изменения изображений галереи продуктов."
+
+#: templates/elex-template-frontend-tables.php:285
+#: templates/elex-template-frontend-tables.php:781
+msgid "Add"
+msgstr "Добавить"
+
+#: templates/elex-template-frontend-tables.php:286
+msgid "Remove"
+msgstr "Удалить"
+
+#: templates/elex-template-frontend-tables.php:293
+msgid "Product Gallery Images"
+msgstr "Изображения галереи продуктов"
+
+#: templates/elex-template-frontend-tables.php:296
+msgid ""
+"Specify the urls (separated by comma) to add, remove or replace images from "
+"product gallery."
+msgstr ""
+"Укажите URL-адреса (через запятую) для добавления, удаления или замены "
+"изображений из коллекции продуктов."
+
+#: templates/elex-template-frontend-tables.php:304
+msgid "Price"
+msgstr "Цена"
+
+#: templates/elex-template-frontend-tables.php:310
+msgid "Regular Price"
+msgstr "Обычная цена"
+
+#: templates/elex-template-frontend-tables.php:313
+#: templates/elex-template-frontend-tables.php:333
+msgid ""
+"Select a condition to adjust the price and enter the value. You can also "
+"choose an option to round it to the nearest value"
+msgstr ""
+"Выберите условие для корректировки цены и введите значение. Вы также можете "
+"выбрать опцию, чтобы округлить его до ближайшего значения"
+
+#: templates/elex-template-frontend-tables.php:318
+#: templates/elex-template-frontend-tables.php:338
+msgid "Increase by Percentage ( + %)"
+msgstr "Увеличение в процентах ( + %)"
+
+#: templates/elex-template-frontend-tables.php:319
+#: templates/elex-template-frontend-tables.php:339
+msgid "Decrease by Percentage ( - %)"
+msgstr "Уменьшение на процент ( - %)"
+
+#: templates/elex-template-frontend-tables.php:320
+#: templates/elex-template-frontend-tables.php:340
+msgid "Increase by Price ( + $)"
+msgstr "Увеличение по цене ( + $)"
+
+#: templates/elex-template-frontend-tables.php:321
+#: templates/elex-template-frontend-tables.php:341
+msgid "Decrease by Price ( - $)"
+msgstr "Снижение по цене ( - $)"
+
+#: templates/elex-template-frontend-tables.php:322
+#: templates/elex-template-frontend-tables.php:342
+msgid "Flat Price for All"
+msgstr "Фиксированная цена для всех"
+
+#: templates/elex-template-frontend-tables.php:330
+msgid "Sale Price"
+msgstr "Цена продажи"
+
+#: templates/elex-template-frontend-tables.php:350
+msgid "Use Regular Price to set Sale Price"
+msgstr "Используйте обычную цену для установки цены продажи"
+
+#: templates/elex-template-frontend-tables.php:353
+msgid ""
+"Enable this option to set the Sale Price based on the the Regular Price."
+msgstr ""
+"Включите эту опцию, чтобы установить Цену продажи на основе Обычной цены."
+
+#: templates/elex-template-frontend-tables.php:363
+msgid "Stock"
+msgstr "Наличие"
+
+#: templates/elex-template-frontend-tables.php:369
+msgid "Manage Stock"
+msgstr "Управление запасами"
+
+#: templates/elex-template-frontend-tables.php:372
+msgid "Enable or Disable manage stock for products or variations"
+msgstr "Включение и отключение управления запасами для продуктов или вариантов"
+
+#: templates/elex-template-frontend-tables.php:378
+#: templates/elex-template-frontend-tables.php:751
+msgid "Disable"
+msgstr "Отключить"
+
+#: templates/elex-template-frontend-tables.php:385
+msgid "Stock Quantity"
+msgstr "Количество запаса"
+
+#: templates/elex-template-frontend-tables.php:388
+msgid "Choose an option to update stock quantity and enter the value"
+msgstr "Выберите опцию обновления количества запасов и введите значение"
+
+#: templates/elex-template-frontend-tables.php:393
+#: templates/elex-template-frontend-tables.php:450
+#: templates/elex-template-frontend-tables.php:468
+#: templates/elex-template-frontend-tables.php:485
+#: templates/elex-template-frontend-tables.php:503
+msgid "Increase"
+msgstr "Увеличить"
+
+#: templates/elex-template-frontend-tables.php:394
+#: templates/elex-template-frontend-tables.php:451
+#: templates/elex-template-frontend-tables.php:469
+#: templates/elex-template-frontend-tables.php:486
+#: templates/elex-template-frontend-tables.php:504
+msgid "Decrease"
+msgstr "Уменьшить"
+
+#: templates/elex-template-frontend-tables.php:402
+msgid "Allow Backorders"
+msgstr "Разрешить предзаказ"
+
+#: templates/elex-template-frontend-tables.php:405
+msgid "Choose how you want to handle backorders"
+msgstr "Выберите способ обработки невыполниться."
+
+#: templates/elex-template-frontend-tables.php:410
+msgid "Do not Allow"
+msgstr "Не позволять"
+
+#: templates/elex-template-frontend-tables.php:411
+msgid "Allow, but Notify the Customer"
+msgstr "Разрешить, но уведомить клиента"
+
+#: templates/elex-template-frontend-tables.php:412
+msgid "Allow"
+msgstr "Разрешить"
+
+#: templates/elex-template-frontend-tables.php:419
+msgid "Stock Status"
+msgstr "Наличие"
+
+#: templates/elex-template-frontend-tables.php:422
+msgid "Choose an option to update  the stock status"
+msgstr "Выберите опцию обновления состояния запаса"
+
+#: templates/elex-template-frontend-tables.php:427
+msgid "In Stock"
+msgstr "В наличии"
+
+#: templates/elex-template-frontend-tables.php:428
+msgid "Out of Stock"
+msgstr "Нет в наличии"
+
+#: templates/elex-template-frontend-tables.php:429
+msgid "On Backorder"
+msgstr "На предзказе"
+
+#: templates/elex-template-frontend-tables.php:435
+msgid "Weight & Dimensions"
+msgstr "Вес и размеры"
+
+#: templates/elex-template-frontend-tables.php:441
+msgid "Length"
+msgstr "Длина"
+
+#: templates/elex-template-frontend-tables.php:442
+#: templates/elex-template-frontend-tables.php:460
+#: templates/elex-template-frontend-tables.php:478
+#: templates/elex-template-frontend-tables.php:495
+#: templates/elex-template-frontend-tables.php:581
+#: templates/elex-template-frontend-tables.php:598
+msgid "("
+msgstr "("
+
+#: templates/elex-template-frontend-tables.php:445
+msgid "Choose an option to update length and enter the value"
+msgstr "Выберите параметр для обновления длины и введите значение"
+
+#: templates/elex-template-frontend-tables.php:459
+msgid "Width"
+msgstr "Ширина"
+
+#: templates/elex-template-frontend-tables.php:463
+msgid "Choose an option to update width and enter the value"
+msgstr "Выберите параметр для обновления ширины и введите значение"
+
+#: templates/elex-template-frontend-tables.php:477
+msgid "Height"
+msgstr "Высота"
+
+#: templates/elex-template-frontend-tables.php:480
+msgid "Choose an option to update height and enter the value"
+msgstr "Выберите параметр для обновления высоты и введите значение"
+
+#: templates/elex-template-frontend-tables.php:494
+msgid "Weight"
+msgstr "Вес"
+
+#: templates/elex-template-frontend-tables.php:498
+msgid "Choose an option to update weight and enter the value"
+msgstr "Выберите параметр для обновления веса и введите значение"
+
+#: templates/elex-template-frontend-tables.php:513
+msgid "Tax"
+msgstr "Налог"
+
+#: templates/elex-template-frontend-tables.php:520
+msgid "Tax status"
+msgstr "Налоговый статус"
+
+#: templates/elex-template-frontend-tables.php:523
+#: templates/elex-template-frontend-tables.php:540
+msgid ""
+"Select an option to determine whether you want to display the selected "
+"attribute on the product page."
+msgstr ""
+"Выберите параметр, чтобы определить, нужно ли отображать выбранный атрибут "
+"на странице продукта."
+
+#: templates/elex-template-frontend-tables.php:528
+msgid "Taxable"
+msgstr "Налогооблагаемый"
+
+#: templates/elex-template-frontend-tables.php:529
+msgid "Shipping"
+msgstr "Доставка"
+
+#: templates/elex-template-frontend-tables.php:530
+msgid "None"
+msgstr "Нет"
+
+#: templates/elex-template-frontend-tables.php:537
+msgid "Tax Class"
+msgstr "Класс налога"
+
+#: templates/elex-template-frontend-tables.php:563
+msgid "<No change >"
+msgstr "<No change >"
+
+#: templates/elex-template-frontend-tables.php:580
+msgid "Attribute Actions"
+msgstr "Действия атрибутов"
+
+#: templates/elex-template-frontend-tables.php:584
+msgid "Select an option to make changes to your attribute values"
+msgstr "Выберите параметр для внесения изменений в значения атрибутов"
+
+#: templates/elex-template-frontend-tables.php:589
+msgid "Add New Values"
+msgstr "Добавление новых значений"
+
+#: templates/elex-template-frontend-tables.php:590
+msgid "Remove Existing Values"
+msgstr "Удаление существующих значений"
+
+#: templates/elex-template-frontend-tables.php:591
+msgid "Overwrite Existing Values"
+msgstr "Перезапись существующих значений"
+
+#: templates/elex-template-frontend-tables.php:597
+msgid "Attributes to Update"
+msgstr "Атрибуты обновления"
+
+#: templates/elex-template-frontend-tables.php:601
+msgid "Select the attribute(s) for which you want to change the values"
+msgstr "Выберите атрибут(ы), для которых необходимо изменить значения"
+
+#: templates/elex-template-frontend-tables.php:631
+msgid "Categories"
+msgstr "Категории"
+
+#: templates/elex-template-frontend-tables.php:638
+msgid "Category Actions"
+msgstr "Действия по категориям"
+
+#: templates/elex-template-frontend-tables.php:641
+msgid ""
+"Select an action to re-assign categories. 'Add' will append and 'Remove' "
+"will take out categories. 'Overwrite' will remove all the existing "
+"categories and assign the selected categories"
+msgstr ""
+"Выберите действие для переуступки категорий. 'Добавить' добавит, а 'Удалить' "
+"удалит категории. 'Перезаписать' удалит все существующие категории и "
+"назначит выбранные категории"
+
+#: templates/elex-template-frontend-tables.php:652
+msgid "Select Categories"
+msgstr "Выбрать категории"
+
+#: templates/elex-template-frontend-tables.php:655
+msgid "Select a category to perform the action you have chosen."
+msgstr "Выберите категорию для выполнения выбранного действия."
+
+#: templates/elex-template-frontend-tables.php:695
+msgid "Role Based Pricing"
+msgstr "Ценообразование на основе ролей"
+
+#: templates/elex-template-frontend-tables.php:701
+msgid "Hide price"
+msgstr "Скрыть цену"
+
+#: templates/elex-template-frontend-tables.php:704
+msgid "Select option to hide price for unregistered users."
+msgstr ""
+"Выберите опцию, чтобы скрыть цену для незарегистрированных пользователей."
+
+#: templates/elex-template-frontend-tables.php:709
+msgid "Show Price"
+msgstr "Показать цену"
+
+#: templates/elex-template-frontend-tables.php:710
+msgid "Hide Price"
+msgstr "Скрыть цены"
+
+#: templates/elex-template-frontend-tables.php:716
+msgid "Hide product price based on user role"
+msgstr "Скрыть цену продукта на основе роли пользователя"
+
+#: templates/elex-template-frontend-tables.php:719
+msgid "For selected user role, hide the product price"
+msgstr "Для выбранной роли пользователя скройте цену продукта"
+
+#: templates/elex-template-frontend-tables.php:723
+msgid "User Role"
+msgstr "Роль пользователя"
+
+#: templates/elex-template-frontend-tables.php:742
+msgid "Enforce product price adjustment"
+msgstr "Корректировка цен на продукцию"
+
+#: templates/elex-template-frontend-tables.php:745
+msgid "Select option to enforce indvidual price adjustment"
+msgstr "Выберите опцию для принудительной корректировки цены"
+
+#: templates/elex-template-frontend-tables.php:767
+msgid "Shipping Pro"
+msgstr "Доставка Pro"
+
+#: templates/elex-template-frontend-tables.php:773
+msgid "Shipping Unit"
+msgstr "Отдел отгрузки"
+
+#: templates/elex-template-frontend-tables.php:776
+msgid "Update Shipping Unit"
+msgstr "Обновление отдела доставки"
+
+#: templates/elex-template-frontend-tables.php:782
+msgid "Subtract"
+msgstr "Вычесть"
+
+#: templates/elex-template-frontend-tables.php:794
+msgid "Delete Products"
+msgstr "Удалить продукты"
+
+#: templates/elex-template-frontend-tables.php:800
+msgid "Delete Action"
+msgstr "Действие удаления"
+
+#: templates/elex-template-frontend-tables.php:803
+msgid "Select how you want to delete products."
+msgstr "Выберите способ удаления продуктов."
+
+#: templates/elex-template-frontend-tables.php:808
+msgid "Move to trash"
+msgstr "Переместить в корзину"
+
+#: templates/elex-template-frontend-tables.php:809
+msgid "Delete Permanently"
+msgstr "Удалить навсегда"
+
+#: templates/elex-template-frontend-tables.php:816
+msgid "Reset Values"
+msgstr "Сброс значений"
+
+#: templates/elex-template-frontend-tables.php:817
+msgid "Update Products"
+msgstr "Обновить товары"
+
+#: templates/elex-template-frontend-tables.php:834
+msgid "Product variations"
+msgstr "Вариации товара"
+
+#: templates/market.php:132
+msgid "ELEX Plugins You May Be Interested In"
+msgstr "Плагины ELEX, которые могут вас заинтересовать"
+
+#. Plugin Name of the plugin/theme
+msgid "ELEX WooCommerce Bulk Edit Products, Prices & Attributes (Basic)"
+msgstr ""
+"ELEX WooCommerce Массовое редактирование продуктов, цен и атрибутов (базовый)"
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://elextensions.com/plugin/elex-bulk-edit-products-prices-attributes-"
+"for-woocommerce-free-version/"
+msgstr ""
+"https://elextensions.com/plugin/elex-bulk-edit-products-prices-attributes-"
+"for-woocommerce-free-version/"
+
+#. Description of the plugin/theme
+msgid ""
+"Bulk Edit Products, Prices & Attributes for Woocommerce allows you to edit "
+"products prices and attributes as Bulk."
+msgstr ""
+"Массовое редактирование продуктов, цен и атрибутов для Woocommerce позволяет "
+"редактировать цены и атрибуты продуктов как Bulk."
+
+#. Author of the plugin/theme
+msgid "ELEXtensions"
+msgstr "ЭЛЕКСТЕНЗИИ"
+
+#. Author URI of the plugin/theme
+msgid "https://elextensions.com/"
+msgstr "https://elextensions.com/"

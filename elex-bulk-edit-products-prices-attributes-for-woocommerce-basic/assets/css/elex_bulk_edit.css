@@ -1,0 +1,35 @@
+.eh-content-table-left {
+    width: 20%;
+    padding: 20px 0px;
+}
+.eh-content-table-middle {
+  width: 2%;
+}
+.eh-edit-tab-table-input-td {
+  padding-left: 13px;
+}
+.eh-content-table-right {
+  width: 33%;
+}
+.select2-container {
+  border-radius: 0.25rem;
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+.select2-container--default .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+  border: none !important;
+}
+.wc-wp-version-gte-53 .select2-container.select2-container--open .select2-selection--multiple{
+  box-shadow: none;
+}
+.eh-content-box {
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+}
+.eh-content-box span{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
