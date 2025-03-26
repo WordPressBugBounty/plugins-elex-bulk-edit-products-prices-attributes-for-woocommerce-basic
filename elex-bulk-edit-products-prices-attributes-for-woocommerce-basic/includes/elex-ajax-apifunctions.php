@@ -212,7 +212,7 @@ function elex_bep_get_attributes_action_callback() {
 // custom rounding
 
 
-function elex_bep_round_ceiling( $number, $significance = 1 ) {
+function eh_bep_round_ceiling( $number, $significance = 1 ) {
 	return ( is_numeric( $number ) && is_numeric( $significance ) ) ? ( ceil( $number / $significance ) * $significance ) : false;
 }
 

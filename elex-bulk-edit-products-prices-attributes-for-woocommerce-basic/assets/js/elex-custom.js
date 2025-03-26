@@ -1583,7 +1583,6 @@ function bep_ajax_filter_products() {
         url: ajaxurl,
         data: data,
         success: function (response) {
-            console.log(response)
             jQuery("#top_filter_tag").css("display", "none");
             document.getElementById("top_filter_tag").hidden = true;
             document.getElementById("wrap_table").hidden = false;
