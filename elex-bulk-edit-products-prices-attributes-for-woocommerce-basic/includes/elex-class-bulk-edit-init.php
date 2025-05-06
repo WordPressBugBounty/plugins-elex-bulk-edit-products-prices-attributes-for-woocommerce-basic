@@ -49,10 +49,15 @@ class Elex_Bulk_Edit_Init extends Eh_Bulk_Edit_Products_Basic {
 	public function elex_bep_register_plugin_styles_scripts() {
 		include_once 'elex-ajax-apifunctions.php';
 		include_once 'elex-class-table-data.php';
-		$page = ( isset( $_GET['page'] ) ) ? esc_attr( $_GET['page'] ) : false;
-		if ( 'eh-bulk-edit-product-attr' != $page ) {
+		
+		// Get and sanitize the 'page' parameter
+		$page = ( isset( $_GET['page'] ) ) ? sanitize_text_field( wp_unslash( $_GET['page'] ) ) : false; // phpcs:ignore WordPress.Security.NonceVerification
+	
+		// Proceed only if the 'page' matches the expected value
+		if ( 'eh-bulk-edit-product-attr' !== $page ) {
 			return;
 		}
+	
 		wp_nonce_field( 'ajax-eh-bep-nonce', '_ajax_eh_bep_nonce' );
 		global $woocommerce;
 		$woocommerce_version = function_exists( 'WC' ) ? WC()->version : $woocommerce->version;
@@ -63,16 +68,19 @@ class Elex_Bulk_Edit_Init extends Eh_Bulk_Edit_Products_Basic {
 		wp_enqueue_style( 'eh-alert-style' );
 		wp_register_style( 'eh-BEplugin-style', plugins_url( '/assets/css/elex_bulk_edit.css', dirname( __FILE__ ) ), array(), $woocommerce_version );
 		wp_enqueue_style( 'eh-BEplugin-style' );
-		wp_register_script( 'eh-alert-jquery', plugins_url( '/assets/js/sweetalert2.min.js', dirname( __FILE__ ) ), array(), $woocommerce_version );
+		wp_register_script('eh-alert-jquery', plugins_url( '/assets/js/sweetalert2.min.js', dirname( __FILE__ ) ), array(), // dependencies
+			$woocommerce_version, // version
+			true // load in footer
+		);
 		wp_enqueue_script( 'eh-alert-jquery' );
-		wp_register_script( 'eh-multibox-jquery', plugins_url( '/assets/js/chosen.jquery.js', dirname( __FILE__ ) ), array(), $woocommerce_version );
+		wp_register_script( 'eh-multibox-jquery', plugins_url( '/assets/js/chosen.jquery.js', dirname( __FILE__ ) ), array(), $woocommerce_version, true );
 		wp_enqueue_script( 'eh-multibox-jquery' );
-		wp_register_script( 'eh-tooltip-jquery', plugins_url( '/assets/js/tooltip.js', dirname( __FILE__ ) ), array(), $woocommerce_version );
+		wp_register_script( 'eh-tooltip-jquery', plugins_url( '/assets/js/tooltip.js', dirname( __FILE__ ) ), array(), $woocommerce_version, true );
 		wp_enqueue_script( 'eh-tooltip-jquery' );
-		wp_register_script( 'eh-custom', plugins_url( '/assets/js/elex-custom.js', dirname( __FILE__ ) ), array('select2'), $woocommerce_version );
-		wp_register_style( 'eh-select-css', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css', array(), $woocommerce_version, false );
+		wp_register_script('eh-custom', plugins_url( '/assets/js/elex-custom.js', dirname( __FILE__ ) ), array( 'select2' ), $woocommerce_version, true );		
+		wp_register_style('eh-select-css', plugin_dir_url( __FILE__ ) . 'assets/css/select2.min.css', array(), $woocommerce_version, false );
 		wp_enqueue_style( 'eh-select-css' );
-		wp_enqueue_script( 'eh-select-script', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js', array(), $woocommerce_version, false );
+		wp_enqueue_script( 'eh-select-script', plugin_dir_url( __FILE__ ) . 'assets/js/select2.min.js', array(), $woocommerce_version, false );	
 		$js_var = array(
 			'filter_attribute_value_title'           => __( 'Attribute Values (Existing)', 'eh_bulk_edit' ),
 			'filter_attribute_value_tooltip'         => __( 'Select the Attribute value(s) for which the filter has to be applied', 'eh_bulk_edit' ),

@@ -95,7 +95,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="panel-body">
 					<div class="row">
 						<div class="col-md-5">
-	<img src="<?php esc_html_e( str_replace( '/templates', '', plugin_dir_url( __FILE__ ) . 'assets/images/prod-logo.png' ) ); ?>" class="marketing_logos">
+	<img src="<?php echo esc_url( str_replace( '/templates', '', plugin_dir_url( __FILE__ ) . 'assets/images/prod-logo.png' ) ); ?>" class="marketing_logos">
 	<h3><?php esc_html_e( 'ELEX WooCommerce Advanced Bulk Edit Products, Prices & Attributes', 'eh_bulk_edit' ); ?></h3>
 	<br/> <center><a href="https://elextensions.com/plugin/bulk-edit-products-prices-attributes-for-woocommerce/" target="_blank" class="button button-primary">Go Premium!</a></center>
 	 </div>
@@ -141,7 +141,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="col-md-4">
 						<div class="row">
 							<div class="col-md-12">
-								<img src="<?php esc_html_e( plugins_url( '\elex-bulk-edit-products-prices-attributes-for-woocommerce-basic\assets\images\amazon_payments.png' ) ); ?>" class="marketing_logos">
+								<img src="<?php echo esc_html( ELEX_BULK_EDIT_MAIN_URL_PATH . '/assets/images/amazon_payments.png' ); ?>" class="marketing_logos">
 							</div>
 						</div>
 						<div class="row">
@@ -153,7 +153,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="col-md-4">
 						<div class="row">
 							<div class="col-md-12">
-								<img src="<?php esc_html_e( plugins_url( '\elex-bulk-edit-products-prices-attributes-for-woocommerce-basic\assets\images\gpf.png' ) ); ?>" class="marketing_logos">
+								<img src="<?php echo esc_html( ELEX_BULK_EDIT_MAIN_URL_PATH . '/assets/images/gpf.png' ); ?>" class="marketing_logos">
 							</div>
 						</div>
 						<div class="row">
@@ -165,7 +165,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="col-md-4">
 						<div class="row">
 							<div class="col-md-12">
-								<img src="<?php esc_html_e( plugins_url( '\elex-bulk-edit-products-prices-attributes-for-woocommerce-basic\assets\images\wsdesk.png' ) ); ?>" class="marketing_logos">
+								<img src="<?php echo esc_html( ELEX_BULK_EDIT_MAIN_URL_PATH . '/assets/images/wsdesk.png' ); ?>" class="marketing_logos">
 							</div>
 						</div>
 						<div class="row">
@@ -179,7 +179,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="col-md-4">
 						<div class="row">
 							<div class="col-md-12">
-								<img src="<?php echo esc_html( ELEX_BULK_EDIT_MAIN_URL_PATH . '/assets/images/ship calculator.png' ); ?>" class="marketing_logos">
+								<img src="<?php echo esc_html( ELEX_BULK_EDIT_MAIN_URL_PATH . '/assets/images/ship-calculator.png' ); ?>" class="marketing_logos">
 							</div>
 						</div>
 						<div class="row">

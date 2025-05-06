@@ -16,7 +16,7 @@ msgstr ""
 "X-Loco-Version: 2.6.10; wp-6.5.5\n"
 "X-Domain: eh_bulk_edit"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/elex-bulk-edit-woocommerce-products-basic.php:47
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/elex-bulk-edit-woocommerce-products-basic.php:47
 msgid ""
 "PREMIUM Version of this Plugin is Activated. Please deactivate the PREMIUM "
 "Version before activating BASIC."
@@ -24,7 +24,7 @@ msgstr ""
 "La Versione PREMIUM di questo Plugin è Attivato. Si prega di disattivare la "
 "Versione PREMIUM, prima di attivare la funzione di BASE."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/elex-bulk-edit-woocommerce-products-basic.php:52
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/elex-bulk-edit-woocommerce-products-basic.php:52
 msgid ""
 "WooCommerce Version of this Plugin is Activated. Please deactivate the "
 "WooCommerce Version before activating BASIC."
@@ -32,18 +32,18 @@ msgstr ""
 "WooCommerce Versione di questo Plugin è Attivato. Si prega di disattivare il "
 "WooCommerce Versione prima di attivare la funzione di BASE."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/elex-bulk-edit-woocommerce-products-basic.php:84
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/elex-bulk-edit-woocommerce-products-basic.php:84
 msgid "Bulk Edit Products"
 msgstr "Modifica Di Massa Di Prodotti"
 
 #. %s - Premium
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/elex-bulk-edit-woocommerce-products-basic.php:87
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:238
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/elex-bulk-edit-woocommerce-products-basic.php:87
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:238
 #, php-format
 msgid "Settings %s"
 msgstr "Impostazioni di %s"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/elex-bulk-edit-woocommerce-products-basic.php:110
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/elex-bulk-edit-woocommerce-products-basic.php:110
 msgid ""
 "<strong>WooCommerce</strong> plugin must be active for <strong>ELEX Bulk "
 "Edit Products, Prices & Attributes for Woocommerce- Basic</strong> to work."
@@ -51,293 +51,293 @@ msgstr ""
 "Il plug-in WooCommerce deve essere attivo per la modifica in blocco di "
 "prodotti, prezzi e attributi ELEX per Woocommerce-Basic"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:77
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:77
 msgid "Attribute Values (Existing)"
 msgstr "I Valori Di Attributo (Esistente)"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:78
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:78
 msgid "Select the Attribute value(s) for which the filter has to be applied"
 msgstr ""
 "Selezionare il valore dell'Attributo(s) per cui il filtro deve essere "
 "applicato"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:79
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:79
 msgid "Select Attributes Values"
 msgstr "Selezionare I Valori Di Attributi"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:80
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:80
 msgid "Desired Price"
 msgstr "Prezzo Desiderato"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:81
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:81
 msgid "Minimum Price"
 msgstr "Prezzo Minimo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:82
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:82
 msgid "Maximum Price"
 msgstr "Prezzo Massimo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:83
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:83
 msgid "Do you want to Proceed?"
 msgstr "Sei sicuro di voler Continuare?"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:84
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:93
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:84
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:93
 msgid "Yes, Proceed"
 msgstr "Sì, Procedere"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:85
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:88
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:94
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:98
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:85
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:88
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:94
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:98
 msgid "No, Wait"
 msgstr "No, Aspetta"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:86
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:86
 msgid "Proceed with Update?"
 msgstr "Procedere con l'Aggiornamento?"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:87
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:87
 msgid "Yes, Update"
 msgstr "Sì, L'Aggiornamento"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:89
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:89
 msgid "Proceed with Undo Update?"
 msgstr "Procedere con l'Annullamento di Aggiornamento?"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:90
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:90
 msgid "This operation can not be reversed "
 msgstr "Questa operazione non può essere annullata"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:91
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:91
 msgid "Undo the Previous Update?"
 msgstr "Annulla la Precedente Aggiornamento?"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:92
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:92
 msgid "Click Proceed to see the Update Details."
 msgstr "Fare clic su Procedi per vedere i Dettagli dell'Aggiornamento."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:95
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:95
 msgid "Are you Sure ?"
 msgstr "Sei Sicuro ?"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:96
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:96
 msgid "Do you want to Reset?"
 msgstr "Vuoi Resettare?"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:97
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:97
 msgid "Yes, Reset"
 msgstr "Sì, Reset"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:99
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:99
 msgid "New Title"
 msgstr "Nuovo Titolo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:100
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:100
 msgid "Append Title"
 msgstr "Aggiungere Il Titolo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:101
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:101
 msgid "Prepend Title"
 msgstr "Anteporre Il Titolo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:102
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:107
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:102
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:107
 msgid "Text to be Replaced"
 msgstr "Il testo da sostituire"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:103
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:108
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:103
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:108
 msgid "Replace Text"
 msgstr "Sostituire Il Testo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:104
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:104
 msgid "New SKU"
 msgstr "Nuovo SKU"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:105
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:105
 msgid "Append SKU"
 msgstr "Aggiungere SKU"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:106
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:106
 msgid "Prepend SKU"
 msgstr "Anteporre SKU"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:109
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:109
 msgid "Product"
 msgstr "Prodotto"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:110
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:110
 msgid "Variations"
 msgstr "Variazioni"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:111
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:111
 msgid "Increase Percentage"
 msgstr "L'Aumento Percentuale"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:112
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:112
 msgid "Nearest Value"
 msgstr "Valore Più Vicino"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:113
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:113
 msgid "Decrease Percentage"
 msgstr "Diminuzione Percentuale"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:114
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:114
 msgid "Increase Price"
 msgstr "Aumento Di Prezzo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:115
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:115
 msgid "Set Flat Price to All"
 msgstr "Set Piatto di Prezzo per Tutti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:116
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:116
 msgid "Decrease Price"
 msgstr "Riduci Prezzo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:117
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:117
 msgid "Value to Add"
 msgstr "Valore da Aggiungere"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:118
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:118
 msgid "Value to Subtract"
 msgstr "Valore da Sottrarre"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:119
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:119
 msgid "Value to Replace"
 msgstr "Valore per Sostituire"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:120
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:120
 msgid "Shipping Unit Will be Added"
 msgstr "Unità di spedizione Verranno Aggiunte"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:121
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:121
 msgid "Shipping Unit Will be Subtracted"
 msgstr "Unità di spedizione Saranno Sottratti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:122
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:122
 msgid "Shipping Unit Will be Replaced"
 msgstr "Unità di spedizione Saranno Sostituiti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:123
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:123
 msgid "Update Successful"
 msgstr "Aggiornamento Riuscito"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:124
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:124
 msgid "Undo Update Successful"
 msgstr "Annullare L'Aggiornamento Di Successo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:125
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:125
 msgid "OK"
 msgstr "OK"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:235
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:235
 msgid "Bulk Edit "
 msgstr "Modifica collettiva"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:242
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:242
 msgid "<span style='color:red;font-size:16px'>Go Premium!</span>"
 msgstr "Passa a Premium!"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:258
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:258
 msgid "FILTER"
 msgstr "FILTRO"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:261
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:261
 msgid "PREVIEW"
 msgstr "ANTEPRIMA"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:264
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:264
 msgid "EDIT PRODUCTS"
 msgstr "EDIT PRODOTTI"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-bulk-edit-init.php:267
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-bulk-edit-init.php:267
 msgid "FINISH"
 msgstr "FINITURA"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/class-eh-datatables.php:217
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-table-data.php:151
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/class-eh-datatables.php:217
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-table-data.php:151
 msgid "Select"
 msgstr "Selezionare"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/class-eh-datatables.php:218
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-table-data.php:152
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/class-eh-datatables.php:218
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-table-data.php:152
 msgid "Image"
 msgstr "Immagine"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/class-eh-datatables.php:219
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-table-data.php:153
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:68
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/class-eh-datatables.php:219
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-table-data.php:153
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:68
 msgid "Title"
 msgstr "Titolo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/class-eh-datatables.php:220
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-table-data.php:154
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/class-eh-datatables.php:220
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-table-data.php:154
 msgid "Properties"
 msgstr "Proprietà"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/class-eh-datatables.php:221
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-table-data.php:155
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:365
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/class-eh-datatables.php:221
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-table-data.php:155
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:365
 msgid "Stock"
 msgstr "Stock"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/class-eh-datatables.php:222
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-table-data.php:156
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:306
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/class-eh-datatables.php:222
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-table-data.php:156
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:306
 msgid "Price"
 msgstr "Prezzo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/class-eh-datatables.php:223
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-table-data.php:157
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/class-eh-datatables.php:223
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-table-data.php:157
 msgid "Published"
 msgstr "Pubblicata"
 
 #. %s:  print total items
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/includes/elex-class-table-data.php:235
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/includes/elex-class-table-data.php:235
 #, php-format
 msgid "%s item"
 msgid_plural "%s items"
 msgstr[0] "%s voce"
 msgstr[1] "%s oggetti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:22
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:22
 msgid "Process Edit"
 msgstr "Il Processo Di Modifica"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:23
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:23
 msgid "Items per page:"
 msgstr "Articoli per pagina:"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:32
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:32
 msgid "Apply"
 msgstr "Applicare"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:38
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:816
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:38
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:816
 msgid "Back"
 msgstr "Indietro"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:39
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:54
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:817
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:39
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:54
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:817
 msgid "Cancel"
 msgstr "Annulla"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:40
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:55
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:40
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:55
 msgid "Continue"
 msgstr "Continua"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:50
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:50
 msgid "Updating the products. Do not refresh..."
 msgstr "Aggiornamento prodotti. Non si aggiorna..."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:62
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:62
 msgid "Update the Products"
 msgstr "Aggiornamento Prodotti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:62
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:62
 msgid ""
 "Enable this Undo option to revert back your current update. But it will "
 "override your previous update."
@@ -345,160 +345,160 @@ msgstr ""
 "Abilitare questa opzione Annulla per ripristinare la corrente di "
 "aggiornamento. Ma questo sovrascriverà il precedente aggiornamento."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:62
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:62
 msgid "Enable Undo Update"
 msgstr "Attiva Annulla Aggiornamento"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:62
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:62
 msgid "Premium"
 msgstr "Premium"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:71
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:71
 msgid "Select a condition to edit the title, and enter the relevant text"
 msgstr ""
 "Selezionare una condizione di modificare il titolo e inserire il testo in "
 "questione"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:75
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:115
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:158
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:177
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:196
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:319
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:339
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:378
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:394
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:411
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:428
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:451
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:469
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:486
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:504
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:529
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:558
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:590
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:710
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:751
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:782
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:809
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:75
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:115
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:158
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:177
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:196
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:319
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:339
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:378
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:394
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:411
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:428
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:451
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:469
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:486
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:504
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:529
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:558
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:590
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:710
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:751
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:782
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:809
 msgid "< No Change >"
 msgstr "<Nessun cambiamento>"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:76
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:116
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:76
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:116
 msgid "Set New"
 msgstr "Set Nuovo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:77
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:117
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:222
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:249
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:77
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:117
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:222
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:249
 msgid "Append"
 msgstr "Aggiungere"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:78
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:118
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:223
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:250
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:78
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:118
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:223
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:250
 msgid "Prepend"
 msgstr "Anteporre"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:79
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:119
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:289
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:397
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:454
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:472
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:489
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:507
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:785
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:79
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:119
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:289
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:397
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:454
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:472
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:489
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:507
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:785
 msgid "Replace"
 msgstr "Sostituire"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:80
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:120
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:80
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:120
 msgid "RegEx Replace"
 msgstr "RegEx Sostituire"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:85
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:125
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:52
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:85
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:125
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:52
 msgid "Select Flags (Optional)"
 msgstr "Selezionare Il Flag (Opzionale)"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:108
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:108
 msgid "SKU"
 msgstr "SKU"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:111
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:111
 msgid "Select a condition to edit the SKU, and enter the relevant text"
 msgstr ""
 "Selezionare una condizione di modificare il codice e inserire il testo in "
 "questione"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:151
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:151
 msgid "Product Visiblity"
 msgstr "Prodotto Visibilità"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:154
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:154
 msgid "Choose which all shop pages the product will be listed on"
 msgstr "Scegliere quale negozio tutto pagine, il prodotto sarà quotata"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:159
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:159
 msgid "Shop and Search"
 msgstr "Il negozio e la Ricerca"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:160
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:160
 msgid "Shop"
 msgstr "Negozio"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:161
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:161
 msgid "Search"
 msgstr "Ricerca"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:162
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:162
 msgid "Hidden"
 msgstr "Nascosto"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:168
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:168
 msgid "Featured Product"
 msgstr "Prodotto In Evidenza"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:172
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:172
 msgid "Select an option to make the product(s) Featured or not."
 msgstr "Selezionare un'opzione per rendere il prodotto(s) Consigliati o non."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:178
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:178
 msgid "Yes"
 msgstr "Sì"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:179
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:179
 msgid "No"
 msgstr "No"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:185
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:185
 msgid "Shipping Class"
 msgstr "Spedizione Classe"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:188
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:188
 msgid "Select a shipping class that will be added to all the filtered products"
 msgstr ""
 "Selezionare una spedizione di classe che verrà aggiunto a tutti filtrato "
 "prodotti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:197
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:197
 msgid "No Shipping Class"
 msgstr "No Spese Di Spedizione Classe"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:204
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:204
 msgid "< No Shipping Class >"
 msgstr "< Nessuna classe di spedizione >"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:214
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:214
 msgid "Description Action"
 msgstr "Descrizione Azione"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:217
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:217
 msgid ""
 "Select a condition to edit or add the description, and enter the relevant "
 "text."
@@ -506,22 +506,22 @@ msgstr ""
 "Selezionare una condizione di modificare o aggiungere la descrizione, e "
 "immettere il testo desiderato."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:221
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:248
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:286
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:221
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:248
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:286
 msgid "No Change"
 msgstr "Nessun Cambiamento"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:224
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:251
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:224
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:251
 msgid "Set new"
 msgstr "Set nuovo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:230
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:230
 msgid "Description"
 msgstr "Descrizione"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:233
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:233
 msgid ""
 "Prepend - Enter the text you want to add at the beginning of the current "
 "description. Append - Enter the text you want to add at the end of the "
@@ -533,11 +533,11 @@ msgstr ""
 "aggiungere alla fine del corrente descrizione. Set nuovo - Immettere il "
 "testo per sostituire l'attuale descrizione."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:241
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:241
 msgid "Short Description Action"
 msgstr "Breve Descrizione Azione"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:244
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:244
 msgid ""
 "Select a condition to edit or add the short description, and enter the "
 "relevant text."
@@ -545,11 +545,11 @@ msgstr ""
 "Selezionare una condizione di modificare o aggiungere una breve descrizione "
 "e immettere il testo desiderato."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:257
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:257
 msgid "Short Description"
 msgstr "Breve Descrizione"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:260
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:260
 msgid ""
 "Prepend - Enter the text you want to add at the beginning of the current "
 "short description. Append - Enter the text you want to add at the end of the "
@@ -561,39 +561,39 @@ msgstr ""
 "aggiungere alla fine del corrente breve descrizione. Set nuovo - Immettere "
 "il testo per sostituire l'attuale breve descrizione."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:268
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:268
 msgid "Product Image"
 msgstr "Immagine Del Prodotto"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:271
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:271
 msgid "Specify an image url to add or replace the product image."
 msgstr ""
 "Specificare l'url di un'immagine per aggiungere o sostituire l'immagine del "
 "prodotto."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:279
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:279
 msgid "Product Gallery Images Action"
 msgstr "Prodotto Immagini Della Galleria D'Azione"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:282
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:282
 msgid "Select a condition to modify product gallery images."
 msgstr ""
 "Selezionare una condizione di modificare il prodotto immagini della galleria."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:287
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:783
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:287
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:783
 msgid "Add"
 msgstr "Aggiungere"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:288
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:288
 msgid "Remove"
 msgstr "Rimuovere"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:295
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:295
 msgid "Product Gallery Images"
 msgstr "Prodotto Immagini Della Galleria"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:298
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:298
 msgid ""
 "Specify the urls (separated by comma) to add, remove or replace images from "
 "product gallery."
@@ -601,12 +601,12 @@ msgstr ""
 "Specificare l'url (separati da virgola) per aggiungere, rimuovere o "
 "sostituire le immagini dal prodotto della galleria."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:312
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:312
 msgid "Regular Price"
 msgstr "Prezzo Regolare"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:315
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:335
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:315
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:335
 msgid ""
 "Select a condition to adjust the price and enter the value. You can also "
 "choose an option to round it to the nearest value"
@@ -614,179 +614,179 @@ msgstr ""
 "Selezionare una condizione di modificare il prezzo e immettere il valore. Si "
 "può anche scegliere un'opzione per arrotondare il valore più vicino"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:320
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:340
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:320
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:340
 msgid "Increase by Percentage ( + %)"
 msgstr "Incremento Percentuale ( + %)"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:321
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:341
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:321
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:341
 msgid "Decrease by Percentage ( - %)"
 msgstr "Riduzione Percentuale ( - %)"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:322
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:342
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:322
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:342
 msgid "Increase by Price ( + $)"
 msgstr "Aumento dei Prezzi ( + $)"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:323
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:343
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:323
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:343
 msgid "Decrease by Price ( - $)"
 msgstr "Una diminuzione di Prezzo ( - $)"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:324
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:344
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:324
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:344
 msgid "Flat Price for All"
 msgstr "Tariffa fissa per Tutti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:332
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:332
 msgid "Sale Price"
 msgstr "Prezzo Di Vendita"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:352
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:352
 msgid "Use Regular Price to set Sale Price"
 msgstr "L'uso Regolare del Prezzo per set Prezzo di Vendita"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:355
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:355
 msgid ""
 "Enable this option to set the Sale Price based on the the Regular Price."
 msgstr ""
 "Abilitare questa opzione per impostare il Prezzo di Vendita basato sul "
 "Prezzo di listino."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:371
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:371
 msgid "Manage Stock"
 msgstr "Gestire Il Magazzino"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:374
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:374
 msgid "Enable or Disable manage stock for products or variations"
 msgstr ""
 "Attivare o Disattivare gestire il magazzino per i prodotti o variazioni"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:379
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:752
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:191
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:379
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:752
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:191
 msgid "Enable"
 msgstr "Attivare"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:380
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:753
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:380
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:753
 msgid "Disable"
 msgstr "Disattivare"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:387
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:387
 msgid "Stock Quantity"
 msgstr "Quantità Di Stock Di"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:390
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:390
 msgid "Choose an option to update stock quantity and enter the value"
 msgstr ""
 "Scegliere un'opzione per aggiornare le quantità di scorte e immettere il "
 "valore"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:395
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:452
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:470
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:487
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:505
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:395
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:452
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:470
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:487
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:505
 msgid "Increase"
 msgstr "Aumento"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:396
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:453
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:471
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:488
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:506
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:396
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:453
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:471
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:488
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:506
 msgid "Decrease"
 msgstr "Diminuzione"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:404
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:404
 msgid "Allow Backorders"
 msgstr "Consentire Arretrati"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:407
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:407
 msgid "Choose how you want to handle backorders"
 msgstr "Scegli come si desidera gestire ordini in arretrato"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:412
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:412
 msgid "Do not Allow"
 msgstr "Non Permettere che"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:413
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:413
 msgid "Allow, but Notify the Customer"
 msgstr "Permettere, ma Informare il Cliente"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:414
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:414
 msgid "Allow"
 msgstr "Consentire"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:421
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:421
 msgid "Stock Status"
 msgstr "Lo Stato Del Magazzino"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:424
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:424
 msgid "Choose an option to update  the stock status"
 msgstr "Scegliere un'opzione per aggiornare la situazione di magazzino"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:429
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:429
 msgid "In Stock"
 msgstr "In Stock"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:430
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:430
 msgid "Out of Stock"
 msgstr "Out of Stock"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:431
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:431
 msgid "On Backorder"
 msgstr "In Arretrato"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:437
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:437
 msgid "Weight & Dimensions"
 msgstr "Peso E Dimensioni"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:443
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:443
 msgid "Length"
 msgstr "Lunghezza"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:447
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:447
 msgid "Choose an option to update length and enter the value"
 msgstr "Scegliere l'opzione di aggiornamento di lunghezza e inserire il valore"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:461
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:461
 msgid "Width"
 msgstr "Larghezza"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:465
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:465
 msgid "Choose an option to update width and enter the value"
 msgstr ""
 "Scegliere l'opzione di aggiornamento di larghezza e immettere il valore"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:479
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:479
 msgid "Height"
 msgstr "Altezza"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:482
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:482
 msgid "Choose an option to update height and enter the value"
 msgstr "Scegliere l'opzione di aggiornamento altezza e immettere il valore"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:496
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:496
 msgid "Weight"
 msgstr "Peso"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:500
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:500
 msgid "Choose an option to update weight and enter the value"
 msgstr "Scegliere un'opzione per aggiornare il peso e immettere il valore"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:515
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:515
 msgid "Tax"
 msgstr "Fiscale"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:522
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:522
 msgid "Tax status"
 msgstr "Status fiscale"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:525
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:542
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:525
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:542
 msgid ""
 "Select an option to determine whether you want to display the selected "
 "attribute on the product page."
@@ -794,69 +794,69 @@ msgstr ""
 "Selezionare un'opzione per determinare se si desidera visualizzare "
 "l'attributo selezionato sulla pagina del prodotto."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:530
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:530
 msgid "Taxable"
 msgstr "Imponibile"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:531
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:531
 msgid "Shipping"
 msgstr "Spedizione"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:532
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:532
 msgid "None"
 msgstr "Nessuno"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:539
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:539
 msgid "Tax Class"
 msgstr "Imposta Di Classe"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:565
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:565
 msgid "<No change >"
 msgstr "<Nessun cambiamento>"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:575
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:135
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:575
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:135
 msgid "Attributes"
 msgstr "Attributi"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:582
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:582
 msgid "Attribute Actions"
 msgstr "Attributo Azioni"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:586
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:586
 msgid "Select an option to make changes to your attribute values"
 msgstr "Selezionare un'opzione per apportare modifiche ai valori di attributo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:591
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:591
 msgid "Add New Values"
 msgstr "Aggiungere Nuovi Valori"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:592
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:592
 msgid "Remove Existing Values"
 msgstr "Rimuovere I Valori Esistenti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:593
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:593
 msgid "Overwrite Existing Values"
 msgstr "Sovrascrivere I Valori Esistenti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:599
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:599
 msgid "Attributes to Update"
 msgstr "Attributi di Aggiornamento"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:603
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:603
 msgid "Select the attribute(s) for which you want to change the values"
 msgstr ""
 "Selezionare l'attributo(s) per il quale si desidera modificare i valori"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:633
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:633
 msgid "Categories"
 msgstr "Categorie"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:640
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:640
 msgid "Category Actions"
 msgstr "Categoria Di Azioni"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:643
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:643
 msgid ""
 "Select an action to re-assign categories. 'Add' will append and 'Remove' "
 "will take out categories. 'Overwrite' will remove all the existing "
@@ -866,183 +866,183 @@ msgstr ""
 "e Togliere, togliere categorie. \"Overwrite' per rimuovere tutte le "
 "categorie esistenti e assegnare le categorie selezionate"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:654
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:105
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:214
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:654
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:105
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:214
 msgid "Select Categories"
 msgstr "Selezionare Le Categorie"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:657
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:657
 msgid "Select a category to perform the action you have chosen."
 msgstr "Selezionare una categoria per eseguire l'azione che avete scelto."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:697
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:697
 msgid "Role Based Pricing"
 msgstr "Ruolo Based Pricing"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:703
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:703
 msgid "Hide price"
 msgstr "Nascondi prezzo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:706
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:706
 msgid "Select option to hide price for unregistered users."
 msgstr ""
 "Selezionare l'opzione per nascondere il prezzo per gli utenti non registrati."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:711
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:711
 msgid "Show Price"
 msgstr "Mostrare Prezzi"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:712
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:712
 msgid "Hide Price"
 msgstr "Nascondi Prezzo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:718
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:718
 msgid "Hide product price based on user role"
 msgstr "Nascondere il prezzo del prodotto in base al ruolo dell'utente"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:721
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:721
 msgid "For selected user role, hide the product price"
 msgstr "Per l'utente selezionato ruolo, nascondere il prezzo del prodotto"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:725
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:725
 msgid "User Role"
 msgstr "Ruolo Utente"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:744
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:744
 msgid "Enforce product price adjustment"
 msgstr "Applicare il prodotto di adeguamento del prezzo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:747
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:747
 msgid "Select option to enforce indvidual price adjustment"
 msgstr ""
 "Selezionare l'opzione per applicare individuale di adeguamento del prezzo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:769
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:769
 msgid "Shipping Pro"
 msgstr "Spedizione Pro"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:775
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:775
 msgid "Shipping Unit"
 msgstr "Unità Di Spedizione"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:778
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:778
 msgid "Update Shipping Unit"
 msgstr "Aggiornamento Unità Di Spedizione"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:784
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:784
 msgid "Subtract"
 msgstr "Sottrarre"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:796
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:796
 msgid "Delete Products"
 msgstr "Eliminare I Prodotti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:802
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:802
 msgid "Delete Action"
 msgstr "L'Azione Di Eliminazione"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:805
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:805
 msgid "Select how you want to delete products."
 msgstr "Selezionare come si desidera eliminare i prodotti."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:810
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:810
 msgid "Move to trash"
 msgstr "Sposta nel cestino"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:811
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:811
 msgid "Delete Permanently"
 msgstr "Eliminare Permanentemente"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:818
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:818
 msgid "Reset Values"
 msgstr "Ripristino Dei Valori"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:819
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:819
 msgid "Update Products"
 msgstr "Aggiornamento Prodotti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:836
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:836
 msgid "Product variations"
 msgstr "Varianti di prodotto"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-tables.php:872
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:257
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-tables.php:872
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:257
 msgid "No categories found."
 msgstr "Nessuna categoria trovata."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:27
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:27
 msgid "Filter the Products"
 msgstr "Filtra i Prodotti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:27
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:27
 msgid "This basic version only supports Simple Products."
 msgstr "Questa versione base supporta solo Prodotti Semplici."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:27
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:27
 msgid "Go Premium! "
 msgstr "Passa a Premium!"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:27
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:27
 msgid "for Variable products."
 msgstr "per la Variabile di prodotti."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:29
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:29
 msgid "Click to undo the last update you have done"
 msgstr "Fare clic per annullare l'ultimo aggiornamento avete fatto"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:29
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:29
 msgid "Undo Last Update"
 msgstr "Annulla L'Ultimo Aggiornamento"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:36
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:36
 msgid "Product Title"
 msgstr "Titolo Del Prodotto"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:39
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:39
 msgid "Select a condition from the drop-down and enter a product title"
 msgstr ""
 "Selezionare una condizione a discesa e immettere un titolo del prodotto"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:43
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:124
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:43
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:124
 msgid "All"
 msgstr "Tutti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:44
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:44
 msgid "Starts With"
 msgstr "Inizia Con"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:45
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:45
 msgid "Ends With"
 msgstr "Si Conclude Con"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:46
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:46
 msgid "Contains"
 msgstr "Contiene"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:47
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:47
 msgid "Regex Match"
 msgstr "Regex Partita"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:78
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:78
 msgid "Product Types"
 msgstr "I Tipi Di Prodotto"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:81
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:81
 msgid "Select the product type(s) for which the filter has to be applied"
 msgstr ""
 "Selezionare il tipo di prodotto(s) per cui il filtro deve essere applicato"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:85
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:85
 msgid "Select Product Types"
 msgstr "Selezionare I Tipi Di Prodotto"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:98
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:98
 msgid "Product Categories"
 msgstr "Categorie Di Prodotto"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:101
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:101
 msgid ""
 "Select the category(s) for which the filter has to be applied. The products "
 "added to any of the selected categories will be filtered. Enable the "
@@ -1052,27 +1052,27 @@ msgstr ""
 "prodotti aggiunti a una qualsiasi delle categorie selezionate verranno "
 "filtrati. Attivare la casella di controllo per includere le sottocategorie"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:109
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:109
 msgid "Include Subcategories"
 msgstr "Includere Le Sottocategorie"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:117
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:117
 msgid "Product Regular Price"
 msgstr "Prodotto Prezzo Regolare"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:120
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:120
 msgid "Select a condition and specify a price"
 msgstr "Selezionare una condizione e specificare un prezzo"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:128
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:128
 msgid "Between"
 msgstr "Tra"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:141
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:141
 msgid "Product Attributes (Group with OR)"
 msgstr "Gli Attributi di prodotto (Gruppo O)"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:144
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:144
 msgid ""
 "The products will be filtered when any one of the attributes and it's "
 "corresponding values are present"
@@ -1080,11 +1080,11 @@ msgstr ""
 "I prodotti saranno filtrati quando uno degli attributi e i valori "
 "corrispondenti sono presenti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:164
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:164
 msgid "Product Attributes (Group with AND)"
 msgstr "Gli Attributi di prodotto (Gruppo E)"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:167
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:167
 msgid ""
 "The products will be filtered only when both attributes and it's "
 "corresponding values are present"
@@ -1092,15 +1092,15 @@ msgstr ""
 "I prodotti saranno filtrati solo quando entrambi gli attributi e i valori "
 "corrispondenti sono presenti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:190
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:190
 msgid "Exclusions"
 msgstr "Esclusioni"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:197
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:197
 msgid "Exclude by IDs"
 msgstr "Escludere da Id"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:200
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:200
 msgid ""
 "Enter the Product IDs to exclude from getting updated (separate IDs by comma)"
 "."
@@ -1108,11 +1108,11 @@ msgstr ""
 "Immettere l'Id del Prodotto, di escludere dalla fase di aggiornamento "
 "(separato Id da una virgola)."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:208
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:208
 msgid "Exclude by Categories"
 msgstr "Escludere per Categorie"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:211
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:211
 msgid ""
 "Select the categories to exclude products from getting updated. All the "
 "subcategories under a parent category will be excluded if you enable "
@@ -1122,31 +1122,31 @@ msgstr ""
 "Tutte le sottocategorie sotto una categoria principale sarà escluso se si "
 "abilita 'Includere Sottocategorie' casella di controllo."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:221
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:221
 msgid "Reset Filter"
 msgstr "Reset Filtro"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-filters.php:222
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-filters.php:222
 msgid "Preview Filtered Products"
 msgstr "Anteprima Filtrato Prodotti"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-settings-tab-fields.php:8
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-settings-tab-fields.php:8
 msgid "Settings"
 msgstr "Impostazioni"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-settings-tab-fields.php:14
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-settings-tab-fields.php:14
 msgid "Update custom meta"
 msgstr "Aggiornamento personalizzato meta"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-settings-tab-fields.php:14
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-settings-tab-fields.php:14
 msgid "[Premium]"
 msgstr "[Premio]"
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-settings-tab-fields.php:17
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-settings-tab-fields.php:17
 msgid "Enter custom meta keys seperated by comma."
 msgstr "Inserire meta tasti separati da virgola."
 
-#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic/templates/elex-template-frontend-settings-tab-fields.php:25
+#: ../../../../../../../Documents/basic/elex-bulk-edit-products-prices-attributes-for-woocommerce/eh_bulk_edit/templates/elex-template-frontend-settings-tab-fields.php:25
 msgid "Save"
 msgstr "Salva"
 

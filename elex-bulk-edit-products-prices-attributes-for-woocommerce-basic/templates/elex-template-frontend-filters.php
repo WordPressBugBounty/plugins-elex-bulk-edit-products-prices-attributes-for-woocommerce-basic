@@ -9,7 +9,10 @@ $cat_args        = array(
 	'order'      => 'ASC',
 );
 $attributes      = wc_get_attribute_taxonomies();
-$attribute_value = get_terms( 'pa_size', $cat_args );
+$attribute_value = get_terms( array_merge(
+	array( 'taxonomy' => 'pa_size' ),
+	$cat_args
+) );
 ?>
 <style>
 		.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{

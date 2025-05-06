@@ -120,10 +120,8 @@ class Elex_DataTables extends WP_List_Table {
 	}
 
 	public function column_thumb( $item ) {
-
-		$thumbnail_id = get_post_thumbnail_id($item['product_id']);
-		$image_url    = wp_get_attachment_url($thumbnail_id);
-			return sprintf( '<img style="width:52px;" src="' . $image_url . '"/>' );
+		$thumbnail_id = get_post_thumbnail_id( $item['product_id'] );
+		return wp_get_attachment_image( $thumbnail_id, array( 52, 52 ), false, array( 'style' => 'width:52px;' ) );
 	}
 
 	public function column_stock( $item ) {
@@ -204,6 +202,7 @@ class Elex_DataTables extends WP_List_Table {
 		extract( $this->_pagination_args, EXTR_SKIP );
 
 		ob_start();
+		// phpcs:ignore WordPress.Security.NonceVerification
 		if ( ! empty( $_REQUEST['no_placeholder'] ) ) {
 			$this->display_rows();
 		} else {
@@ -263,7 +262,7 @@ add_action( 'wp_ajax_eh_bep_ajax_table_data', 'elex_bep_ajax_data_callback' );
  * This function adds the jQuery script to the plugin's page footer
  */
 function admin_header() {
-	$page = ( isset( $_GET['page'] ) ) ? esc_attr( $_GET['page'] ) : false;
+	$page = ( isset( $_GET['page'] ) ) ? sanitize_text_field( wp_unslash( $_GET['page'] ) ) : false; // phpcs:ignore WordPress.Security.NonceVerification
 	if ( 'eh-bulk-edit-product-attr' != $page ) {
 		return;
 	}

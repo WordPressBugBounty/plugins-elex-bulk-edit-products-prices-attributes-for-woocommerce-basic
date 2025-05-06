@@ -24,19 +24,20 @@ if ( ! class_exists( 'Elex_Review_Components' ) ) {
 
 		public function update_get_options() {
 
-			if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_GET['_wpnonce'] ) ) ) {
+			if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_GET['_wpnonce'] ) ) ) ) {
 				return;
-			}
+			}			
 
 			if ( ! isset( $_GET['review_component_action'] ) || ! isset( $_GET['plugin_basename'] ) ) {
 				return;
 			}
 			
-			if ( sanitize_text_field( $_GET['plugin_basename'] ) !== $this->data['basename'] ) {
+			$plugin_basename = sanitize_text_field( wp_unslash( $_GET['plugin_basename'] ) );
+			
+			if ( $plugin_basename !== $this->data['basename'] ) {
 				return;
-			}
-
-			$review_component_action = sanitize_text_field( $_GET['review_component_action'] );
+			}			
+			$review_component_action = sanitize_text_field( wp_unslash( $_GET['review_component_action'] ) );
 
 			if ( 'troubleshoot_never_ask_again' === $review_component_action ) {
 				$this->update_option( 'troubleshoot_never_ask_again', true );

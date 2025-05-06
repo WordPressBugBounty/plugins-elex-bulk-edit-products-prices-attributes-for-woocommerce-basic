@@ -32,7 +32,11 @@ function elex_bep_list_table() {
 	<button id='save_dislay_count_order'class='button ' style='background-color:#f7f7f7; '><?php esc_html_e( 'Apply', 'eh_bulk_edit' ); ?></button>
 	<form id="products-filter" method="get">
 		<input type="hidden" name="action" value="all" />
-		<input type="hidden" name="page" value="<?php echo isset($_REQUEST['page']) ? esc_attr( $_REQUEST['page'] ) : ''; ?>" />
+		<?php
+		// phpcs:ignore WordPress.Security.NonceVerification 
+		$page = isset( $_REQUEST['page'] ) ? sanitize_text_field(wp_unslash( $_REQUEST['page'] ) ): '';
+		?>
+		<input type="hidden" name="page" value="<?php echo esc_attr( $page ); ?>" />
 		<?php $obj->display(); ?>
 	</form>
 	<button id='preview_back' value='edit_products' style="background-color: gray;color: white; width: 10%; " class='button button-large'><span class="update-text"><?php esc_html_e( 'Back', 'eh_bulk_edit' ); ?></span></button>
@@ -465,7 +469,7 @@ function elex_bep_process_edit() {
 			<tr>
 				<td class='eh-edit-tab-table-left'>
 					<?php esc_html_e( 'Width', 'eh_bulk_edit' ); ?>
-					<span style="float:right;"><?php esc_html_e( '(' . strtolower( get_option( 'woocommerce_dimension_unit' ) ) . ')' ); ?></span>
+					<span style="float:right;"><?php esc_html( '(' . strtolower( get_option( 'woocommerce_dimension_unit' ) ) . ')' ); ?></span>
 				</td>
 				<td class='eh-edit-tab-table-middle'>
 					<span class='woocommerce-help-tip tooltip' data-tooltip='<?php esc_attr_e( 'Choose an option to update width and enter the value', 'eh_bulk_edit' ); ?>'></span>
@@ -483,7 +487,7 @@ function elex_bep_process_edit() {
 			<tr>
 				<td class='eh-edit-tab-table-left'>
 					<?php esc_html_e( 'Height', 'eh_bulk_edit' ); ?>
-					<span style="float:right;"><?php esc_html_e( '(' . strtolower( get_option( 'woocommerce_dimension_unit' ) ) . ')' ); ?></span>
+					<span style="float:right;"><?php esc_html( '(' . strtolower( get_option( 'woocommerce_dimension_unit' ) ) . ')' ); ?></span>
 				<td class='eh-edit-tab-table-middle'>
 					<span class='woocommerce-help-tip tooltip' data-tooltip='<?php esc_attr_e( 'Choose an option to update height and enter the value', 'eh_bulk_edit' ); ?>'></span>
 				</td>
@@ -500,7 +504,7 @@ function elex_bep_process_edit() {
 			<tr>
 				<td class='eh-edit-tab-table-left'>
 					<?php esc_html_e( 'Weight', 'eh_bulk_edit' ); ?>
-					<span style="float:right;"><?php esc_html_e( '(' . strtolower( get_option( 'woocommerce_weight_unit' ) ) . ')' ); ?></span>
+					<span style="float:right;"><?php esc_html( '(' . strtolower( get_option( 'woocommerce_weight_unit' ) ) . ')' ); ?></span>
 				</td>
 				<td class='eh-edit-tab-table-middle'>
 					<span class='woocommerce-help-tip tooltip' data-tooltip='<?php esc_attr_e( 'Choose an option to update weight and enter the value', 'eh_bulk_edit' ); ?>'></span>
@@ -586,7 +590,7 @@ function elex_bep_process_edit() {
 			<tr id="attr_add_edit">
 				<td class='eh-edit-tab-table-left'>
 					<?php esc_html_e( 'Attribute Actions', 'eh_bulk_edit' ); ?>
-	<!--                    <span style="float:right;"><?php esc_html_e( '(' . strtolower( get_option( 'woocommerce_weight_unit' ) ) . ')' ); ?></span>-->
+	<!--                    <span style="float:right;"><?php esc_html( '(' . strtolower( get_option( 'woocommerce_weight_unit' ) ) . ')' ); ?></span>-->
 				</td>
 				<td class='eh-edit-tab-table-middle'>
 					<span class='woocommerce-help-tip tooltip' data-tooltip='<?php esc_attr_e( 'Select an option to make changes to your attribute values', 'eh_bulk_edit' ); ?>'></span>
@@ -603,7 +607,7 @@ function elex_bep_process_edit() {
 			<tr id="attr_names" >
 				<td class='eh-edit-tab-table-left'>
 					<?php esc_html_e( 'Attributes to Update', 'eh_bulk_edit' ); ?>
-	<!--                    <span style="float:right;"><?php esc_html_e( '(' . strtolower( get_option( 'woocommerce_weight_unit' ) ) . ')'); ?></span>-->
+	<!--                    <span style="float:right;"><?php esc_html( '(' . strtolower( get_option( 'woocommerce_weight_unit' ) ) . ')'); ?></span>-->
 				</td>
 				<td class='eh-edit-tab-table-middle'>
 					<span class='woocommerce-help-tip tooltip' data-tooltip='<?php esc_attr_e( 'Select the attribute(s) for which you want to change the values', 'eh_bulk_edit' ); ?>'></span>
@@ -698,6 +702,17 @@ function elex_bep_process_edit() {
 		</table>
 
 		<?php
+		/**
+		 * Filters the list of active plugins.
+		 *
+		 * This filter allows modification of the active plugins list before checking
+		 * if the 'Pricing Discounts by User Role for WooCommerce' plugin is active.
+		 *
+		 * @since 1.0.0
+		 *
+		 * @param array $active_plugins Array of active plugin paths.
+		 * @return array Modified list of active plugins.
+		 */
 		if ( in_array( 'pricing-discounts-by-user-role-woocommerce/pricing-discounts-by-user-role-woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 			?>
 			<h2>
@@ -768,7 +783,17 @@ function elex_bep_process_edit() {
 			</table>
 			<?php
 		}
-
+		/**
+		 * Filters the list of active plugins.
+		 *
+		 * This filter allows modification of the array of active plugins before checking if 
+		 * 'per-product-addon-for-woocommerce-shipping-pro' is active.
+		 *
+		 * @since 1.0.0
+		 *
+		 * @param array $active_plugins Array of active plugin paths.
+		 * @return array Modified list of active plugins.
+		 */
 		if ( in_array( 'per-product-addon-for-woocommerce-shipping-pro/woocommerce-per-product-shipping-addon-for-shipping-pro.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 			?>
 
@@ -833,7 +858,7 @@ add_action( 'admin_footer', 'elex_bep_variation_pop' );
 require_once ELEX_BEP_TEMPLATE_PATH . '/elex-template-frontend-settings-tab-fields.php';
 
 function elex_bep_variation_pop() {
-	$page = ( isset( $_GET['page'] ) ) ? esc_attr( $_GET['page'] ) : false;
+	$page = ( isset( $_GET['page'] ) ) ? sanitize_text_field( wp_unslash( $_GET['page'] ) ) : false;// phpcs:ignore WordPress.Security.NonceVerification
 	if ( 'eh-bulk-edit-product-attr' != $page ) {
 		return;
 	}

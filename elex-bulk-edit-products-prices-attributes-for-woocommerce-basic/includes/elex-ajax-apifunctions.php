@@ -55,7 +55,7 @@ function eh_bep_send_categories_filter_input_value_callback() {
 	global $wpdb;
 	check_ajax_referer( 'ajax-eh-bep-nonce', '_ajax_eh_bep_nonce' );
 	if ( isset( $_POST['input_text_value_categories'] ) ) {
-		$input_text                   = isset( $_POST['input_text_value_categories'] ) ? sanitize_text_field( $_POST['input_text_value_categories'] ) : '';
+		$input_text                   = isset( $_POST['input_text_value_categories'] ) ? sanitize_text_field( wp_unslash( $_POST['input_text_value_categories'] ) ) : '';
 		$get_categories               = get_terms(
 			array(
 				'taxonomy'   => 'product_cat',
@@ -104,7 +104,7 @@ function eh_bep_send_categories_filter_input_value_callback() {
 
 function elex_bep_display_count_callback() {
 	check_ajax_referer( 'ajax-eh-bep-nonce', '_ajax_eh_bep_nonce' );
-	$value = isset($_POST['row_count']) ? sanitize_text_field( $_POST['row_count'] ) : '';
+	$value = isset( $_POST['row_count'] ) ? sanitize_text_field( wp_unslash( $_POST['row_count'] ) ) : '';
 	update_option( 'eh_bulk_edit_table_row', $value );
 	die( 'success' );
 }
@@ -117,7 +117,7 @@ function elex_bep_count_products_callback() {
 
 function elex_bep_get_attributes_action_callback() {
 	check_ajax_referer( 'ajax-eh-bep-nonce', '_ajax_eh_bep_nonce' );
-	$attribute_name = isset($_POST['attrib']) ? sanitize_text_field( $_POST['attrib'] ) : '';
+	$attribute_name = isset( $_POST['attrib'] ) ? sanitize_text_field( wp_unslash( $_POST['attrib'] ) ) : '';
 	$cat_args       = array(
 		'hide_empty' => false,
 		'order'      => 'ASC',
@@ -129,7 +129,10 @@ function elex_bep_get_attributes_action_callback() {
 			$attribute_label = $value->attribute_label;
 		}
 	}
-	$attribute_value = get_terms( 'pa_' . $attribute_name, $cat_args );
+	$attribute_value = get_terms( array_merge(
+		array( 'taxonomy' => 'pa_' . $attribute_name ),
+		$cat_args
+	) );	
 	if ( isset( $_POST['attr_and'] ) ) {
 		$return = "<optgroup label='" . $attribute_label . "' id='grp_and_" . $attribute_name . "'>";
 	} else {
@@ -218,85 +221,86 @@ function eh_bep_round_ceiling( $number, $significance = 1 ) {
 
 function elex_bep_update_product_callback() {
 	set_time_limit( 300 );
-		// HTML tags and attributes allowed in description and short description
+	// HTML tags and attributes allowed in description and short description
 	$allowed_html = wp_kses_allowed_html( 'post' );
 	check_ajax_referer( 'ajax-eh-bep-nonce', '_ajax_eh_bep_nonce' );
 	$selected_products     = '';
-	$unchecked_product_ids = !empty( $_POST['unchecked_array'] ) ? array_map( 'sanitize_text_field', json_decode( $_POST['unchecked_array'] ) ) : array();
+	$unchecked_product_ids = !empty( $_POST['unchecked_array'] ) 
+	? array_map( 'sanitize_text_field', json_decode( wp_unslash( $_POST['unchecked_array'] ) ) )// phpcs:ignore WordPress.Security.NonceVerification
+	: array();
 	if ( isset( $_POST['pid'] ) && is_array( $_POST['pid'] ) ) {
-			$filtered_product_ids = array_map( 'sanitize_text_field', wp_unslash( $_POST['pid'] ) );
-			$selected_products    = array_diff( $filtered_product_ids, $unchecked_product_ids );
+		$filtered_product_ids = array_map( 'sanitize_text_field', wp_unslash( $_POST['pid'] ) );// phpcs:ignore WordPress.Security.NonceVerification
+		$selected_products    = array_diff( $filtered_product_ids, $unchecked_product_ids );
 	}
 	$product_data = array();
 
-	$title_select             = isset( $_POST['title_select'] ) ? sanitize_text_field( $_POST['title_select'] ) : '';
-	$title_text               = isset( $_POST['title_text'] ) ? sanitize_text_field( $_POST['title_text'] ) : '';
-	$replace_title_text       = isset( $_POST['replace_title_text'] ) ? sanitize_text_field( $_POST['replace_title_text'] ) : '';
-	$regex_replace_title_text = isset( $_POST['regex_replace_title_text'] ) ? sanitize_text_field( $_POST['regex_replace_title_text'] ) : '';
+	$title_select             = isset( $_POST['title_select'] ) ? sanitize_text_field( wp_unslash( $_POST['title_select'] ) ) : '';
+	$title_text               = isset( $_POST['title_text'] ) ? sanitize_text_field( wp_unslash( $_POST['title_text'] ) ) : '';
+	$replace_title_text       = isset( $_POST['replace_title_text'] ) ? sanitize_text_field( wp_unslash( $_POST['replace_title_text'] ) ) : '';
+	$regex_replace_title_text = isset( $_POST['regex_replace_title_text'] ) ? sanitize_text_field( wp_unslash( $_POST['regex_replace_title_text'] ) ) : '';
 
-	$sku_select             = isset( $_POST['sku_select'] ) ? sanitize_text_field( $_POST['sku_select'] ) : '';
-	$sku_text               = isset( $_POST['sku_text'] ) ? sanitize_text_field( $_POST['sku_text'] ) : '';
-	$sku_delimeter          = isset( $_POST['sku_delimeter'] ) ? sanitize_text_field( $_POST['sku_delimeter'] ) : '';
-	$sku_padding            = isset( $_POST['sku_padding'] ) ? sanitize_text_field( $_POST['sku_padding'] ) : '';
-	$sku_replace_text       = isset( $_POST['sku_replace_text'] ) ? sanitize_text_field( $_POST['sku_replace_text'] ) : '';
-	$regex_sku_replace_text = isset( $_POST['regex_sku_replace_text'] ) ? sanitize_text_field( $_POST['regex_sku_replace_text'] ) : '';
-	
-	#sale price options
-	$sale_select       = isset( $_POST['sale_select'] ) ? sanitize_text_field( $_POST['sale_select'] ) : '';
-	$sale_text         = isset( $_POST['sale_text'] ) ? sanitize_text_field( $_POST['sale_text'] ) : '';
-	$sale_round_select = isset( $_POST['sale_round_select'] ) ? sanitize_text_field( $_POST['sale_round_select'] ) : '';
-	$sale_round_text   = isset( $_POST['sale_round_text'] ) ? sanitize_text_field( $_POST['sale_round_text'] ) : '';
+	$sku_select             = isset( $_POST['sku_select'] ) ? sanitize_text_field( wp_unslash( $_POST['sku_select'] ) ) : '';
+	$sku_text               = isset( $_POST['sku_text'] ) ? sanitize_text_field( wp_unslash( $_POST['sku_text'] ) ) : '';
+	$sku_delimeter          = isset( $_POST['sku_delimeter'] ) ? sanitize_text_field( wp_unslash( $_POST['sku_delimeter'] ) ) : '';
+	$sku_padding            = isset( $_POST['sku_padding'] ) ? sanitize_text_field( wp_unslash( $_POST['sku_padding'] ) ) : '';
+	$sku_replace_text       = isset( $_POST['sku_replace_text'] ) ? sanitize_text_field( wp_unslash( $_POST['sku_replace_text'] ) ) : '';
+	$regex_sku_replace_text = isset( $_POST['regex_sku_replace_text'] ) ? sanitize_text_field( wp_unslash( $_POST['regex_sku_replace_text'] ) ) : '';
+
+	# sale price options
+	$sale_select       = isset( $_POST['sale_select'] ) ? sanitize_text_field( wp_unslash( $_POST['sale_select'] ) ) : '';
+	$sale_text         = isset( $_POST['sale_text'] ) ? sanitize_text_field( wp_unslash( $_POST['sale_text'] ) ) : '';
+	$sale_round_select = isset( $_POST['sale_round_select'] ) ? sanitize_text_field( wp_unslash( $_POST['sale_round_select'] ) ) : '';
+	$sale_round_text   = isset( $_POST['sale_round_text'] ) ? sanitize_text_field( wp_unslash( $_POST['sale_round_text'] ) ) : '';
 	$sale_warning      = array();
-	#regular price options
-	$regular_select       = isset( $_POST['regular_select'] ) ? sanitize_text_field( $_POST['regular_select'] ) : '';
-	$regular_round_select = isset( $_POST['regular_round_select'] ) ? sanitize_text_field( $_POST['regular_round_select'] ) : '';
-	$regular_text         = isset( $_POST['regular_text'] ) ? sanitize_text_field( $_POST['regular_text'] ) : '';
-	$regular_round_text   = isset( $_POST['regular_round_text'] ) ? sanitize_text_field( $_POST['regular_round_text'] ) : '';
-	$regular_check_val    = isset( $_POST['regular_check_val'] ) ? sanitize_text_field( $_POST['regular_check_val'] ) : '';
 
+	# regular price options
+	$regular_select       = isset( $_POST['regular_select'] ) ? sanitize_text_field( wp_unslash( $_POST['regular_select'] ) ) : '';
+	$regular_round_select = isset( $_POST['regular_round_select'] ) ? sanitize_text_field( wp_unslash( $_POST['regular_round_select'] ) ) : '';
+	$regular_text         = isset( $_POST['regular_text'] ) ? sanitize_text_field( wp_unslash( $_POST['regular_text'] ) ) : '';
+	$regular_round_text   = isset( $_POST['regular_round_text'] ) ? sanitize_text_field( wp_unslash( $_POST['regular_round_text'] ) ) : '';
+	$regular_check_val    = isset( $_POST['regular_check_val'] ) ? sanitize_text_field( wp_unslash( $_POST['regular_check_val'] ) ) : '';
 
-	$catalog_select       = isset( $_POST['catalog_select'] ) ? sanitize_text_field( $_POST['catalog_select'] ) : '';
-	$shipping_select      = isset( $_POST['shipping_select'] ) ? sanitize_text_field( $_POST['shipping_select'] ) : '';
-	$shipping_unit        = isset( $_POST['shipping_unit'] ) ? sanitize_text_field( $_POST['shipping_unit'] ) : '';
-	$shipping_unit_select = isset( $_POST['shipping_unit_select'] ) ? sanitize_text_field( $_POST['shipping_unit_select'] ) : '';
+	$catalog_select       = isset( $_POST['catalog_select'] ) ? sanitize_text_field( wp_unslash( $_POST['catalog_select'] ) ) : '';
+	$shipping_select      = isset( $_POST['shipping_select'] ) ? sanitize_text_field( wp_unslash( $_POST['shipping_select'] ) ) : '';
+	$shipping_unit        = isset( $_POST['shipping_unit'] ) ? sanitize_text_field( wp_unslash( $_POST['shipping_unit'] ) ) : '';
+	$shipping_unit_select = isset( $_POST['shipping_unit_select'] ) ? sanitize_text_field( wp_unslash( $_POST['shipping_unit_select'] ) ) : '';
 
-	$stock_manage_select = isset( $_POST['stock_manage_select'] ) ? sanitize_text_field( $_POST['stock_manage_select'] ) : '';
-	$stock_status_select = isset( $_POST['stock_status_select'] ) ? sanitize_text_field( $_POST['stock_status_select'] ) : '';
+	$stock_manage_select = isset( $_POST['stock_manage_select'] ) ? sanitize_text_field( wp_unslash( $_POST['stock_manage_select'] ) ) : '';
+	$stock_status_select = isset( $_POST['stock_status_select'] ) ? sanitize_text_field( wp_unslash( $_POST['stock_status_select'] ) ) : '';
 
-	$quantity_select = isset( $_POST['quantity_select'] ) ? sanitize_text_field( $_POST['quantity_select'] ) : '';
-	$quantity_text   = isset( $_POST['quantity_text'] ) ? sanitize_text_field( $_POST['quantity_text'] ) : '';
+	$quantity_select = isset( $_POST['quantity_select'] ) ? sanitize_text_field( wp_unslash( $_POST['quantity_select'] ) ) : '';
+	$quantity_text   = isset( $_POST['quantity_text'] ) ? sanitize_text_field( wp_unslash( $_POST['quantity_text'] ) ) : '';
 
-	$backorder_select = isset( $_POST['backorder_select'] ) ? sanitize_text_field( $_POST['backorder_select'] ) : '';
-	$attribute_action = isset( $_POST['attribute_action'] ) ? sanitize_text_field( $_POST['attribute_action'] ) : '';
+	$backorder_select = isset( $_POST['backorder_select'] ) ? sanitize_text_field( wp_unslash( $_POST['backorder_select'] ) ) : '';
+	$attribute_action = isset( $_POST['attribute_action'] ) ? sanitize_text_field( wp_unslash( $_POST['attribute_action'] ) ) : '';
 
-	$length_select = isset( $_POST['length_select'] ) ? sanitize_text_field( $_POST['length_select'] ) : '';
-	$width_select  = isset( $_POST['width_select'] ) ? sanitize_text_field( $_POST['width_select'] ) : '';
-	$height_select = isset( $_POST['height_select'] ) ? sanitize_text_field( $_POST['height_select'] ) : '';
-	$weight_select = isset( $_POST['weight_select'] ) ? sanitize_text_field( $_POST['weight_select'] ) : '';
-	$length_text   = isset( $_POST['length_text'] ) ? sanitize_text_field( $_POST['length_text'] ) : '';
-	$width_text    = isset( $_POST['width_text'] ) ? sanitize_text_field( $_POST['width_text'] ) : '';
-	$height_text   = isset( $_POST['height_text'] ) ? sanitize_text_field( $_POST['height_text'] ) : '';
-	$weight_text   = isset( $_POST['weight_text'] ) ? sanitize_text_field( $_POST['weight_text'] ) : '';
-	
+	$length_select = isset( $_POST['length_select'] ) ? sanitize_text_field( wp_unslash( $_POST['length_select'] ) ) : '';
+	$width_select  = isset( $_POST['width_select'] ) ? sanitize_text_field( wp_unslash( $_POST['width_select'] ) ) : '';
+	$height_select = isset( $_POST['height_select'] ) ? sanitize_text_field( wp_unslash( $_POST['height_select'] ) ) : '';
+	$weight_select = isset( $_POST['weight_select'] ) ? sanitize_text_field( wp_unslash( $_POST['weight_select'] ) ) : '';
+	$length_text   = isset( $_POST['length_text'] ) ? sanitize_text_field( wp_unslash( $_POST['length_text'] ) ) : '';
+	$width_text    = isset( $_POST['width_text'] ) ? sanitize_text_field( wp_unslash( $_POST['width_text'] ) ) : '';
+	$height_text   = isset( $_POST['height_text'] ) ? sanitize_text_field( wp_unslash( $_POST['height_text'] ) ) : '';
+	$weight_text   = isset( $_POST['weight_text'] ) ? sanitize_text_field( wp_unslash( $_POST['weight_text'] ) ) : '';
 
-	$hide_price       = isset( $_POST['hide_price'] ) ? sanitize_text_field( $_POST['hide_price'] ) : '';
-	$hide_price_role  = ( isset( $_POST['hide_price_role'] ) && '' !== $_POST['hide_price_role'] ) ? sanitize_text_field( $_POST['hide_price_role'] ) : '';
-	$price_adjustment = isset( $_POST['price_adjustment'] ) ? sanitize_text_field( $_POST['price_adjustment'] ) : '';
-	$featured         = isset( $_POST['is_featured'] ) ? sanitize_text_field( $_POST['is_featured'] ) : '';
+	$hide_price       = isset( $_POST['hide_price'] ) ? sanitize_text_field( wp_unslash( $_POST['hide_price'] ) ) : '';
+	$hide_price_role  = ( isset( $_POST['hide_price_role'] ) && '' !== $_POST['hide_price_role'] ) ? sanitize_text_field( wp_unslash( $_POST['hide_price_role'] ) ) : '';
+	$price_adjustment = isset( $_POST['price_adjustment'] ) ? sanitize_text_field( wp_unslash( $_POST['price_adjustment'] ) ) : '';
+	$featured         = isset( $_POST['is_featured'] ) ? sanitize_text_field( wp_unslash( $_POST['is_featured'] ) ) : '';
 
-	$description              = wp_kses( isset( $_POST['description'] ) ?  $_POST['description'] : '', $allowed_html );
-	$description_action       = isset( $_POST['description_action'] ) ? sanitize_text_field( $_POST['description_action'] ) : '';
-	$short_description        = wp_kses( isset( $_POST['short_description'] ) ?  $_POST['short_description'] : '', $allowed_html );
-	$short_description_action = isset( $_POST['short_description_action'] ) ? sanitize_text_field( $_POST['short_description_action'] ) : '';
+	$description              = wp_kses( isset( $_POST['description'] ) ? wp_unslash( $_POST['description'] ) : '', $allowed_html );
+	$description_action       = isset( $_POST['description_action'] ) ? sanitize_text_field( wp_unslash( $_POST['description_action'] ) ) : '';
+	$short_description        = wp_kses( isset( $_POST['short_description'] ) ? wp_unslash( $_POST['short_description'] ) : '', $allowed_html );
+	$short_description_action = isset( $_POST['short_description_action'] ) ? sanitize_text_field( wp_unslash( $_POST['short_description_action'] ) ) : '';
 
-	$gallery_images        = ! empty( $_POST['gallery_images'] ) ? array_map( 'sanitize_text_field', $_POST['gallery_images'] ) : array( );
-	$gallery_images_action = isset( $_POST['gallery_images_action'] ) ? sanitize_text_field( $_POST['gallery_images_action'] ) : '';
-	$main_image            = isset( $_POST['main_image'] ) ? sanitize_text_field( $_POST['main_image'] ) : '';
+	$gallery_images        = ! empty( $_POST['gallery_images'] ) ? array_map( 'sanitize_text_field', wp_unslash( $_POST['gallery_images'] ) ) : array();
+	$gallery_images_action = isset( $_POST['gallery_images_action'] ) ? sanitize_text_field( wp_unslash( $_POST['gallery_images_action'] ) ) : '';
+	$main_image            = isset( $_POST['main_image'] ) ? sanitize_text_field( wp_unslash( $_POST['main_image'] ) ) : '';
 
-	$delete_product_action = isset( $_POST['delete_product_action'] ) ? sanitize_text_field( $_POST['delete_product_action'] ) : '';
+	$delete_product_action = isset( $_POST['delete_product_action'] ) ? sanitize_text_field( wp_unslash( $_POST['delete_product_action'] ) ) : '';
 
-	$tax_status_action = isset( $_POST['tax_status_action'] ) ? sanitize_text_field( $_POST['tax_status_action'] ) : '';
-	$tax_class_action  = isset( $_POST['tax_class_action'] ) ? sanitize_text_field( $_POST['tax_class_action'] ) : '';
+	$tax_status_action = isset( $_POST['tax_status_action'] ) ? sanitize_text_field( wp_unslash( $_POST['tax_status_action'] ) ) : '';
+	$tax_class_action  = isset( $_POST['tax_class_action'] ) ? sanitize_text_field( wp_unslash( $_POST['tax_class_action'] ) ) : '';
 
 	$count_iteration = 0;
 
@@ -392,7 +396,8 @@ function elex_bep_update_product_callback() {
 					if ( @preg_replace( '/' . $regex_replace_title_text . '/', $title_text, $product_data['title'] ) != false ) {
 						$regex_flags = '';
 						if ( ! empty( $_REQUEST['regex_flag_sele_title'] ) ) {
-							foreach ( $_REQUEST['regex_flag_sele_title'] as $reg_val ) {
+							$regex_flag_sele_title = sanitize_text_field(wp_unslash( $_REQUEST['regex_flag_sele_title'] ));  // phpcs:ignore WordPress.Security.NonceVerification
+							foreach ( $regex_flag_sele_title as $reg_val ) {
 								$regex_flags .= sanitize_text_field( $reg_val );
 							}
 						}
@@ -537,13 +542,16 @@ function elex_bep_update_product_callback() {
 				$temp->save();
 			}
 			// Delete
-			if ( isset( $delete_product_action ) && '' != $delete_product_action ) {
-				if ( 'move_to_trash' == $delete_product_action ) {
-					$temp->delete( false );
-				} else {
-					$temp->delete( true );
+			if ( $temp ) {
+				if ( isset( $delete_product_action ) && '' !== $delete_product_action ) {
+					if ( 'move_to_trash' === $delete_product_action ) {
+						$temp->delete( false );
+					} else {
+						$temp->delete( true );
+					}
+					continue; // Skip further processing for this product
 				}
-			}
+			}		
 			if ( 'variation' != $temp_type ) {
 				if ( WC()->version < '3.0.0' ) {
 					$temp->set_catalog_visibility( $catalog_select );
@@ -1001,15 +1009,23 @@ function elex_bep_update_product_callback() {
 				}
 	
 			}
-			if ( isset($_POST['attribute_variation']) && 'add' == sanitize_text_field( $_POST['attribute_variation'] ) ) {
-				$is_variation = 1;
-			}
-			if ( isset($_POST['attribute_variation']) && 'remove' == sanitize_text_field( $_POST['attribute_variation'] ) ) {
-				$is_variation = 0;
+			if ( isset( $_POST['attribute_variation'] ) ) {
+				$attribute_variation = sanitize_text_field( wp_unslash( $_POST['attribute_variation'] ) );
+			
+				switch ( $attribute_variation ) {
+					case 'add':
+						$is_variation = 1;
+						break;
+					case 'remove':
+						$is_variation = 0;
+						break;
+				}
 			}
 
 			if ( ! empty( $_POST['attribute_value'] ) ) {
-				foreach ( $_POST['attribute_value'] as $key => $value ) {
+				$raw_values       = wp_unslash( $_POST['attribute_value'] );
+				$attribute_values = array_map( 'sanitize_text_field', $raw_values );
+				foreach ( $attribute_values as $key => $value ) {
 
 					$value     = stripslashes( sanitize_text_field( $value ) );
 					$value     = preg_replace( '/\'/', '', $value );
@@ -1021,7 +1037,7 @@ function elex_bep_update_product_callback() {
 						$i = 0;
 					}
 					$prev_value = $att_slugs[0];
-					if ( 'replace' == sanitize_text_field( $_POST['attribute_action'] ) && 0 == $i ) {
+					if ( 'replace' == sanitize_text_field(wp_unslash( $_POST['attribute_action'] )) && 0 == $i ) {
 						wp_set_object_terms( $pid, $att_slugs[1], $att_slugs[0] );
 						$i++;
 					} else {
@@ -1036,7 +1052,7 @@ function elex_bep_update_product_callback() {
 							'is_variation' => $is_variation,
 						),
 					);
-					if ( sanitize_text_field( $_POST['attribute_action'] ) == 'add' || sanitize_text_field( $_POST['attribute_action'] ) == 'replace' ) {
+					if ( sanitize_text_field( wp_unslash($_POST['attribute_action'] )) == 'add' || sanitize_text_field( wp_unslash($_POST['attribute_action'] )) == 'replace' ) {
 						$_product_attr = get_post_meta( $pid, '_product_attributes', true );
 						if ( ! empty( $_product_attr ) ) {
 							update_post_meta( $pid, '_product_attributes', array_merge( $_product_attr, $thedata ) );
@@ -1044,7 +1060,7 @@ function elex_bep_update_product_callback() {
 							update_post_meta( $pid, '_product_attributes', $thedata );
 						}
 					}
-					if ( sanitize_text_field( $_POST['attribute_action'] ) == 'remove' ) {
+					if ( sanitize_text_field( wp_unslash($_POST['attribute_action'] )) == 'remove' ) {
 						wp_remove_object_terms( $pid, $att_slugs[1], $att_slugs[0] );
 					}
 					$product = wc_get_product( $pid );           
@@ -1055,8 +1071,9 @@ function elex_bep_update_product_callback() {
 				}
 			}
 			if ( ! empty( $_POST['new_attribute_values'] ) || '' != $_POST['new_attribute_values'] ) {
-				$ar1 = explode( ',', sanitize_text_field( $_POST['attribute'] ) );
+				$ar1 = explode( ',', sanitize_text_field(wp_unslash( $_POST['attribute'] )) );
 				foreach ( $ar1 as $key => $value ) {
+
 					foreach ( $_POST['new_attribute_values'] as $key_index => $value_slug ) {
 
 						$att_s = 'pa_' . $value;
@@ -1070,7 +1087,7 @@ function elex_bep_update_product_callback() {
 						}
 
 						$prev_value = $att_s;
-						if ( 'replace' == sanitize_text_field( $_POST['attribute_action'] ) && 0 == $i ) {
+						if ( 'replace' == sanitize_text_field(wp_unslash( $_POST['attribute_action'] )) && 0 == $i ) {
 							wp_set_object_terms( $pid, $value_slug, $att_s );
 							$i++;
 						} else {
@@ -1085,7 +1102,7 @@ function elex_bep_update_product_callback() {
 								'is_variation' => $is_variation,
 							),
 						);
-						if ( 'add' == sanitize_text_field( $_POST['attribute_action'] ) || sanitize_text_field( $_POST['attribute_action'] ) == 'replace' ) {
+						if ( 'add' == sanitize_text_field( wp_unslash( $_POST['attribute_action'] ) ) || sanitize_text_field( wp_unslash( $_POST['attribute_action'] ) ) == 'replace' ) {
 							$_product_attr = get_post_meta( $pid, '_product_attributes', true );
 							if ( ! empty( $_product_attr ) ) {
 								update_post_meta( $pid, '_product_attributes', array_merge( $_product_attr, $thedata ) );
@@ -1103,28 +1120,35 @@ function elex_bep_update_product_callback() {
 			}
 		}
 				// category feature
-		if ( isset( $_POST['categories_to_update'] ) &&  isset($_POST['category_update_option']) && sanitize_text_field( $_POST['category_update_option'] ) != 'cat_none' ) {
+		if ( isset( $_POST['categories_to_update'] ) &&  isset($_POST['category_update_option']) && sanitize_text_field(wp_unslash( $_POST['category_update_option']) ) != 'cat_none' ) {
 			$existing_cat = wp_get_object_terms( $pid, 'product_cat' );
-			// undo data
-			
-			if ( isset( $_POST['category_update_option'] ) && sanitize_text_field( $_POST['category_update_option'] ) == 'cat_add' ) {
+			if ( isset( $_POST['category_update_option'] ) && sanitize_text_field( wp_unslash($_POST['category_update_option'] )) == 'cat_add' ) {
 				$temparr = array();
 				foreach ( $existing_cat as $cat_key => $cat_val ) {
 					array_push( $temparr, (int) $cat_val->term_id );
 				}
-				foreach ( $_POST['categories_to_update'] as $key => $value ) {
+				$categories_to_update_raw_val = wp_unslash( $_POST['categories_to_update'] );
+				$categories_to_update         = array_map( 'sanitize_text_field', $categories_to_update_raw_val );
+				foreach ( $categories_to_update as $key => $value ) {
 					if ( ! in_array(  (int) $value, $temparr, true )) {
 						array_push( $temparr, (int) $value);
 					}
 					wp_set_object_terms( $pid, $temparr, 'product_cat' );
 				}
-			} elseif (  isset( $_POST['category_update_option'] ) && sanitize_text_field( $_POST['category_update_option'] ) == 'cat_replace' ) {
-				$temparr = array();
-				foreach ( $_POST['categories_to_update'] as $key => $val ) {
+			} elseif (
+				isset( $_POST['category_update_option'] ) && sanitize_text_field(wp_unslash( $_POST['category_update_option']) ) == 'cat_replace' ) {
+				$temparr                      = array();
+				$categories_to_update_raw_val = wp_unslash( $_POST['categories_to_update'] );
+				$categories_to_update         = array_map( 'sanitize_text_field', $categories_to_update_raw_val );
+				// Sanitize input
+				$categories_to_update = array_map( 'intval', $categories_to_update );
+				foreach ( $categories_to_update as $key => $val ) {
 					array_push( $temparr, (int) $val );
 				}
 					wp_set_object_terms( $pid, $temparr, 'product_cat' );
-			} elseif ( isset( $_POST['category_update_option'] ) && sanitize_text_field( $_POST['category_update_option'] ) == 'cat_remove' ) {
+			} elseif (
+				 // phpcs:ignore WordPress.Security.NonceVerification
+				 isset( $_POST['category_update_option'] ) && sanitize_text_field( wp_unslash ($_POST['category_update_option'])) == 'cat_remove' ) {
 				$temparr_remove = array();
 				foreach ( $existing_cat as $cat_rem_key => $cat_rem_val ) {
 					
@@ -1186,12 +1210,14 @@ function eh_bep_search_filter_callback() {
 
 function elex_bep_get_selected_products( $table_obj = null ) {
 	$sel_ids = array();
+	 // phpcs:ignore WordPress.Security.NonceVerification
 	if ( isset( $_REQUEST['count_products'] ) ) {
 		$sel_ids = get_option( 'xa_bulk_selected_ids' );
 		return $sel_ids;
 	}
 	delete_option( 'xa_bulk_selected_ids' );
-	$page_no           = ! empty( $_REQUEST['paged'] ) ? sanitize_text_field( $_REQUEST['paged'] ) : 1;
+	 // phpcs:ignore WordPress.Security.NonceVerification
+	$page_no           = ! empty( $_REQUEST['paged'] ) ? sanitize_text_field(wp_unslash( $_REQUEST['paged'] )) : 1;
 	$selected_products = array();
 	$per_page          = ( get_option( 'eh_bulk_edit_table_row' ) ) ? get_option( 'eh_bulk_edit_table_row' ) : 20;
 	$pid_to_include    = elex_bep_filter_products();
@@ -1206,6 +1232,7 @@ function elex_bep_get_selected_products( $table_obj = null ) {
 	}
 
 	$total_pages = count( $sel_chunk );
+	 // phpcs:ignore WordPress.Security.NonceVerification
 	if ( isset( $_REQUEST['page'] ) && ! empty( $table_obj ) && ( 1 ==  $total_pages ) ) {
 		$total_pages++;
 	}
@@ -1254,142 +1281,189 @@ function elex_bep_filter_products( $data = '' ) {
 	} else {
 		$data_to_filter = $data;
 	}
-	$sql = "SELECT DISTINCT ID FROM {$prefix}posts LEFT JOIN {$prefix}term_relationships on {$prefix}term_relationships.object_id={$prefix}posts.ID LEFT JOIN {$prefix}term_taxonomy on {$prefix}term_taxonomy.term_taxonomy_id  = {$prefix}term_relationships.term_taxonomy_id LEFT JOIN {$prefix}terms on {$prefix}terms.term_id  ={$prefix}term_taxonomy.term_id LEFT JOIN {$prefix}postmeta on {$prefix}postmeta.post_id  ={$prefix}posts.ID WHERE  post_type = 'product' AND post_status='publish'";
-
-	$title_query = '';
+	$query = elexBeBWPFluent()->table('posts')
+	->select('posts.ID')
+	->leftJoin('term_relationships', 'term_relationships.object_id', '=', 'posts.ID')
+	->leftJoin('term_taxonomy', 'term_taxonomy.term_taxonomy_id', '=', 'term_relationships.term_taxonomy_id')
+	->leftJoin('terms', 'terms.term_id', '=', 'term_taxonomy.term_id')
+	->leftJoin('postmeta', 'postmeta.post_id', '=', 'posts.ID')
+	->where('posts.post_type', '=', 'product')
+	->where('posts.post_status', '=', 'publish')
+	->where('term_taxonomy.taxonomy', '=', 'product_type')
+	->whereIn('terms.slug', ['simple'])
+	->groupBy('posts.ID');
+	
 	if ( isset( $data_to_filter['product_title_select'] ) && 'all' != sanitize_text_field( $data_to_filter['product_title_select'] ) && '' != $data_to_filter['product_title_text'] ) {
-		switch ( $data_to_filter['product_title_select'] ) {
+		switch ($data_to_filter['product_title_select']) {
 			case 'starts_with':
-				$title_query = " AND post_title LIKE '{$data_to_filter['product_title_text']}%' ";
+				$query->where('posts.post_title', 'LIKE', $data_to_filter['product_title_text'] . '%');
 				break;
 			case 'ends_with':
-				$title_query = " AND post_title LIKE '%{$data_to_filter['product_title_text']}' ";
+				$query->where('posts.post_title', 'LIKE', '%' . $data_to_filter['product_title_text']);
 				break;
 			case 'contains':
-				$title_query = " AND post_title LIKE '%{$data_to_filter['product_title_text']}%' ";
+				$query->where('posts.post_title', 'LIKE', '%' . $data_to_filter['product_title_text'] . '%');
 				break;
 			case 'title_regex':
-				$title_query = " AND (post_title REGEXP '{$data_to_filter['product_title_text']}') ";
+				$query->where('posts.post_title', 'REGEXP', $data_to_filter['product_title_text']);
 				break;
 		}
 	}
 	$price_query  = '';
 	$filter_range = ! empty( $data_to_filter['range'] ) ? $data_to_filter['range'] : '';
 	if ( 'all' != $filter_range && ! empty( $filter_range ) ) {
-		if ( '|' != $filter_range ) {
-			$price_query = " AND meta_key='_regular_price' AND meta_value {$filter_range} {$data_to_filter['desired_price']} ";
+		// Price filtering
+		if ('|' != $filter_range) {
+			$query->where('postmeta.meta_key', '=', '_regular_price')->where('postmeta.meta_value', $filter_range, (int) $data_to_filter['desired_price']);
 		} else {
-			$price_query = " AND meta_key='_regular_price' AND (meta_value >= {$data_to_filter['minimum_price']} AND meta_value <= {$data_to_filter['maximum_price']}) ";
+			$query->where('postmeta.meta_key', '=', '_regular_price')->whereBetween('postmeta.meta_value', $data_to_filter['minimum_price'], $data_to_filter['maximum_price']);
 		}
 	}
 
 	$attr_condition  = '';
 	$attribute_value = '';
 	if ( ! empty( $data_to_filter['attribute_value_filter'] ) && is_array( $data_to_filter['attribute_value_filter'] ) ) {
-		$attribute_value = implode( ',', $data_to_filter['attribute_value_filter'] );
-		$attribute_value = stripslashes( $attribute_value );
-		if ( ! empty( $attribute_value ) ) {
-			$attr_condition = " CONCAT(taxonomy, ':', name) IN ({$attribute_value})";
+		$filters = array_map(function( $item) {
+			return trim($item, "'\\"); // removes both slashes and quotes
+		}, $data_to_filter['attribute_value_filter']);
+		$parsed  = [];
+		foreach ($filters as $filter) {
+			$parts    = explode(':', $filter);
+			$taxonomy = isset($parts[0]) ? $parts[0] : null;
+			$slug     = isset($parts[1]) ? $parts[1] : null;
+			$parsed[] = ['taxonomy' => $taxonomy, 'slug' => $slug];
 		}
+		$attribute_value_filter_ids = elexBeBWPFluent()->table('posts')
+		->leftJoin('term_relationships', 'posts.ID', '=', 'term_relationships.object_id')
+		->leftJoin('term_taxonomy', 'term_relationships.term_taxonomy_id', '=', 'term_taxonomy.term_taxonomy_id')
+		->leftJoin('terms', 'term_taxonomy.term_id', '=', 'terms.term_id')
+		->where('posts.post_type', 'product')
+		->where('posts.post_status', 'publish')
+		->where(function ( $q) use ( $parsed) {
+			foreach ($parsed as $pair) {
+				$q->orWhere(function ( $subQ) use ( $pair) {
+					$subQ->where('term_taxonomy.taxonomy', $pair['taxonomy'])
+						->where('terms.slug', $pair['slug']);
+				});
+			}
+		})
+		->groupBy('posts.ID')
+		->select('posts.ID')
+		->get();
+		$attribute_value_filter_ids = wp_list_pluck( $attribute_value_filter_ids, 'ID' );
 	}
 	if ( ! empty( $data_to_filter['attribute_value_and_filter'] ) && is_array( $data_to_filter['attribute_value_and_filter'] ) ) {
-		$attribute_value_and = implode( ',', $data_to_filter['attribute_value_and_filter'] );
-		$attribute_count     = count( $data_to_filter['attribute_value_and_filter']);
-		$attribute_value_and = stripslashes( $attribute_value_and );
-		if ( !empty( $attribute_value_and ) ) {
-			$attr_condition = "  {$prefix}posts.ID IN ( SELECT ID FROM {$prefix}posts LEFT JOIN {$prefix}term_relationships on {$prefix}term_relationships.object_id={$prefix}posts.ID LEFT JOIN {$prefix}term_taxonomy on {$prefix}term_taxonomy.term_taxonomy_id  = {$prefix}term_relationships.term_taxonomy_id LEFT JOIN {$prefix}terms on {$prefix}terms.term_id  ={$prefix}term_taxonomy.term_id WHERE  post_type = 'product' AND post_status='publish' AND CONCAT(taxonomy,':',slug)  in ({$attribute_value_and}) GROUP BY {$prefix}posts.ID HAVING COUNT( {$prefix}posts.ID) ={$attribute_count}) ";
+		$filters = array_map(function( $item) {
+			return trim($item, "'\\"); // removes both slashes and quotes
+		}, $data_to_filter['attribute_value_and_filter']);
+		$parsed  = [];
+		foreach ($filters as $filter) {
+			$parts    = explode(':', $filter);
+			$taxonomy = isset($parts[0]) ? $parts[0] : null;
+			$slug     = isset($parts[1]) ? $parts[1] : null;
+			$parsed[] = ['taxonomy' => $taxonomy, 'slug' => $slug];
 		}
+		$attribute_value_and_filter_ids = elexBeBWPFluent()->table('posts')
+		->leftJoin('term_relationships', 'posts.ID', '=', 'term_relationships.object_id')
+		->leftJoin('term_taxonomy', 'term_relationships.term_taxonomy_id', '=', 'term_taxonomy.term_taxonomy_id')
+		->leftJoin('terms', 'term_taxonomy.term_id', '=', 'terms.term_id')
+		->where('posts.post_type', 'product')
+		->where('posts.post_status', 'publish')
+		->where(function ( $q) use ( $parsed) {
+			foreach ($parsed as $pair) {
+				$q->orWhere(function ( $subQ) use ( $pair) {
+					$subQ->where('term_taxonomy.taxonomy', $pair['taxonomy'])
+						->where('terms.slug', $pair['slug']);
+				});
+			}
+		})
+		->groupBy('posts.ID')
+		->select('posts.ID')
+		->get();
+
+		$attribute_value_and_filter_ids = wp_list_pluck( $attribute_value_and_filter_ids, 'ID' );
 	}
 	$category_condition = '';
 	$filter_categories  = array();
-	if ( ! empty( $data_to_filter['category_filter'] ) && is_array( $data_to_filter['category_filter'] ) ) {
-		$filter_categories = elex_get_categories( $data_to_filter['category_filter'], $data_to_filter['sub_category_filter'] );
-		$cat_cond          = '';
-		$cat_count         = 0;
-
-		// WPML Compatibility.
-		// 1. Get active languages.
-		$languages_array = apply_filters( 'wpml_active_languages', null );
-		$language_codes  = array();
-		if ( is_array( $languages_array ) ) {
-			$language_codes = wp_list_pluck( $languages_array, 'code' );
-		}
-
-		// 2. Get the category ids of different languages.
-		$wpml_category_ids = array();
-		foreach ( $language_codes as $k => $language_code ) {
-			foreach ( $filter_categories as $cats ) {
-				$translated_category_id = apply_filters( 'wpml_object_id', $cats, 'category', false, $language_code );
-				array_push( $wpml_category_ids, $translated_category_id );
-			}
-		}
-
-		if ( ! empty( $wpml_category_ids ) ) {
-			$filter_categories = $wpml_category_ids;
-		}
-
-		foreach ( $filter_categories as $cats ) {
-			if ( empty( $cat_cond ) ) {
-				$cat_cond = "'" . $cats . "'";
-			} else {
-				$cat_cond .= ",'" . $cats . "'";
-			}
-			$cat_count++;
-		}
+	if (!empty($data_to_filter['category_filter'])) {
+		$included = elex_get_categories( $data_to_filter['category_filter'], $data_to_filter['sub_category_filter'] );
 	
-			$category_condition = " taxonomy='product_cat' AND {$prefix}terms.term_id  in ({$cat_cond}) ";
-	}
+		$include_query = elexBeBWPFluent()->table('posts')
+			->leftJoin('term_relationships', 'posts.ID', '=', 'term_relationships.object_id')
+			->where('posts.post_type', 'product')
+			->where('posts.post_status', 'publish')
+			->whereIn('term_relationships.term_taxonomy_id', $included)
+			->groupBy('posts.ID')
+			->select('posts.ID')
+			->get();
+	
+		$include_categories_ids = wp_list_pluck($include_query, 'ID');
 
+
+	}
+	
 	$exclude_categories     = array();
 	$exclude_categories_ids = array();
-	if ( ! empty( $data_to_filter['exclude_categories'] ) && is_array( $data_to_filter['exclude_categories'] ) ) {
-		$exclude_categories = elex_get_categories( $data_to_filter['exclude_categories'], $data_to_filter['exclude_subcat_check'] );
-		$cat_cond           = '';
-		foreach ( $exclude_categories as $cats ) {
-			if ( empty( $cat_cond ) ) {
-				$cat_cond = "'" . $cats . "'";
-			} else {
-				$cat_cond .= ",'" . $cats . "'";
-			}
-		}
+	if (!empty($data_to_filter['exclude_categories'])) {
+		$excluded      = elex_get_categories($data_to_filter['exclude_categories'], $data_to_filter['exclude_subcat_check']);
+		$exclude_query = elexBeBWPFluent()->table('posts')
+			->leftJoin('term_relationships', 'posts.ID', '=', 'term_relationships.object_id')
+			->where('posts.post_type', 'product')
+			->where('posts.post_status', 'publish')
+			->whereIn('term_relationships.term_taxonomy_id', $excluded)
+			->groupBy('posts.ID')
+			->select('posts.ID')
+			->get();
 
-		$exclude_categories_sql    = "SELECT ID FROM {$prefix}posts LEFT JOIN {$prefix}term_relationships ON ({$prefix}posts.ID = {$prefix}term_relationships.object_id) WHERE 1=1 AND ( {$prefix}term_relationships.term_taxonomy_id IN ({$cat_cond}) ) AND {$prefix}posts.post_type = 'product' AND ({$prefix}posts.post_status = 'publish') GROUP BY {$prefix}posts.ID";
-		$exclude_categories_result = $wpdb->get_results( ( $wpdb->prepare( '%1s', $exclude_categories_sql ) ? stripslashes( $wpdb->prepare( '%1s', $exclude_categories_sql ) ) : $wpdb->prepare( '%s', '' ) ), ARRAY_A );
-		$exclude_categories_ids    = wp_list_pluck( $exclude_categories_result, 'ID' );
+		$exclude_categories_ids = wp_list_pluck($exclude_query, 'ID');
+		
 	}
-
-	if ( ! empty( $title_query ) ) {
-		$sql .= $title_query;
-	}
-	if ( ! empty( $price_query ) ) {
-		$sql .= $price_query;
-	}
-
+	
 	$ids_simple = array();
 	if ( empty( $data_to_filter['type'] ) || in_array( 'simple', $data_to_filter['type'] ) ) {
-		$product_type_condition = " taxonomy='product_type'  AND slug  in ('simple') ";
-
-		if ( ! empty( $attr_condition ) && ! empty( $category_condition ) ) {
-			$main_query = $sql . ' AND ' . $attr_condition . ' AND ID IN (' . $sql . ' AND ' . $category_condition . ' AND ID IN (' . $sql . ' AND ' . $product_type_condition . '))';
-		} elseif ( ! empty( $attr_condition ) && empty( $category_condition ) ) {
-			$main_query = $sql . ' AND ' . $attr_condition . ' AND ID IN (' . $sql . ' AND ' . $product_type_condition . ')';
-		} elseif ( ! empty( $category_condition ) && empty( $attr_condition ) ) {
-			$main_query = $sql . ' AND ' . $category_condition . ' AND ID IN (' . $sql . ' AND ' . $product_type_condition . ')';
-		} else {
-			$main_query = $sql . ' AND ' . $product_type_condition;
-		}
-		$result     = $wpdb->get_results( ( $wpdb->prepare( '%1s', $main_query ) ? stripslashes( $wpdb->prepare( '%1s', $main_query ) ) : $wpdb->prepare( '%s', '' ) ), ARRAY_A );
+		$result     = $query->get();
 		$ids_simple = wp_list_pluck( $result, 'ID' );
 	}
 
 	$res_id = $ids_simple;
-	if (isset($_POST['nounce_verify'])) {
-		$verify = wp_verify_nonce( sanitize_text_field( $_POST['nounce_verify']), 'Exclude_by_cat_filter');
-	}
 	if ( ! empty( $exclude_categories_ids ) ) {
 		$res_id = array_values( array_diff( $res_id, $exclude_categories_ids ) );
 	}
-	if ( isset( $_POST['enable_exclude_prods'] ) && $_POST['enable_exclude_prods'] && ! empty( $res_id ) && ! empty( $data_to_filter['exclude_ids'] ) ) {
+	if ( ! empty( $data_to_filter['attribute_value_and_filter'] ) && is_array( $data_to_filter['attribute_value_and_filter'] ) ) {
+		
+		if ( empty( $attribute_value_and_filter_ids ) ) {
+			$res_id = array();
+		} else {
+			$res_id = array_values( array_intersect( $res_id, $attribute_value_and_filter_ids ) );
+		}
+	}
+	if ( ! empty( $data_to_filter['attribute_value_filter'] ) && is_array( $data_to_filter['attribute_value_filter'] ) ) {
+		
+		if ( empty( $attribute_value_filter_ids ) ) {
+			$res_id = array();
+		} else {
+			$res_id = array_values( array_intersect( $res_id, $attribute_value_filter_ids ) );
+		}
+	}
+	if ( ! empty( $data_to_filter['category_filter'] ) && is_array( $data_to_filter['category_filter'] ) ) {
+		
+		if ( empty( $include_categories_ids ) ) {
+			$res_id = array();
+		} else {
+			$res_id = array_values( array_intersect( $res_id, $include_categories_ids ) );
+		}
+	}
+	if (isset($_POST['_ajax_eh_bep_nonce'])) {
+		$nonce = sanitize_text_field($_POST['_ajax_eh_bep_nonce']);
+		if ( wp_verify_nonce($nonce, 'ajax-eh-bep-nonce')) {
+			$enable_exclude_prods = isset($_POST['enable_exclude_prods']) ? sanitize_text_field($_POST['enable_exclude_prods']) : false;
+		} else {
+			$enable_exclude_prods = false;
+		}
+	} else {
+		$enable_exclude_prods = false; 
+	}
+	if ( isset($enable_exclude_prods) && $enable_exclude_prods && ! empty( $res_id ) && ! empty( $data_to_filter['exclude_ids'] ) ) {
 		foreach ( $res_id as $key => $val ) {
 			if ( in_array( $val, $data_to_filter['exclude_ids'] ) ) {
 				unset( $res_id[ $key ] );
@@ -1397,6 +1471,8 @@ function elex_bep_filter_products( $data = '' ) {
 		}
 		$res_id = array_values( $res_id );
 	}
+	global $wpdb;
+
 	return $res_id;
 }
 

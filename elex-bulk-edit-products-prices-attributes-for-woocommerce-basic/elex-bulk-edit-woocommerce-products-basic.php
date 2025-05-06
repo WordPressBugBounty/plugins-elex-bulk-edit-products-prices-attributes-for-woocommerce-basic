@@ -2,14 +2,17 @@
 /*
 Plugin Name: ELEX WooCommerce Bulk Edit Products, Prices & Attributes (Basic)
 Plugin URI: https://elextensions.com/plugin/elex-bulk-edit-products-prices-attributes-for-woocommerce-free-version/
-Description: Bulk Edit Products, Prices & Attributes for Woocommerce allows you to edit products prices and attributes as Bulk.
-Version: 1.4.9
+Description: Bulk Edit Products, Prices & Attributes for WooCommerce allows you to edit products' prices and attributes in bulk.
+Version: 1.5.0
 WC requires at least: 2.6.0
-WC tested up to: 9.7
+WC tested up to: 9.8
 Author: ELEXtensions
 Author URI: https://elextensions.com/
 Text Domain: eh_bulk_edit
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -25,8 +28,8 @@ if ( ! defined( 'ELEX_BULK_EDIT_MAIN_URL_PATH' ) ) {
 	define( 'ELEX_BULK_EDIT_MAIN_URL_PATH', plugin_dir_url( __FILE__ ) );
 }
 
+require ELEX_BEP_DIR . 'vendor/wp-fluent/autoload.php';
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
-
 // review component
 if ( ! function_exists( 'get_plugin_data' ) ) {
 	require_once  ABSPATH . 'wp-admin/includes/plugin.php';
@@ -52,12 +55,36 @@ register_activation_hook( __FILE__, function() {
 		wp_die( esc_html_e( 'WooCommerce Version of this Plugin is Activated. Please deactivate the WooCommerce Version before activating BASIC.', 'eh_bulk_edit' ), '', array( 'back_link' => 1 ) );
 	}
 });
-// astra starter templates and jetpack plugin compatability 
+/**
+ * Filters the list of active plugins.
+ *
+ * Allows developers to modify the list of active plugins before checking for a specific one.
+ *
+ * @since 1.0.0
+ *
+ * @param array $active_plugins Array of active plugin paths.
+ * @return array Modified list of active plugins.
+ */
 if ( ! in_array( 'astra-sites/astra-sites.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 	$url = '';
+	/**
+	 * Filter the timeout value for HTTP requests.
+	 *
+	 * Allows developers to modify the timeout value (default is 30 seconds).
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param int    $timeout Timeout value in seconds.
+	 * @param string $url     The request URL.
+	 */
 	apply_filters( 'http_request_timeout', 30, $url );
 }
 	// WooCommerce Active Check.
+/**
+ * Hook into 'init' to do something only if WooCommerce is active.
+ *
+ * @since 1.0.0
+ */
 if (in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ), true ) || ( is_multisite() && is_plugin_active_for_network( 'woocommerce/woocommerce.php' ) )) {
 
 	if (!class_exists( 'Eh_Bulk_Edit_Products_Basic' )) {
@@ -87,7 +114,7 @@ if (in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', ge
 							esc_html__( 'Settings %s', 'eh_bulk_edit' ),
 							'<span style="vertical-align: super;color:green;font-size:12px;">[Premium]</span>'
 						),						
-						'<a href="https://elextensions.com/support/" target="_blank">' . __( 'Support', 'eh-woocommerce-pricing-discount' ) . '</a>',
+						'<a href="https://elextensions.com/support/" target="_blank">' . __( 'Support', 'eh_bulk_edit' ) . '</a>',
 					);
 				return array_merge( $plugin_links, $links );
 			}

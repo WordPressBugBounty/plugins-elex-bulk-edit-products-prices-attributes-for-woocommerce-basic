@@ -171,9 +171,8 @@ class Eh_DataTables extends WP_List_Table {
 	 * @param var $item Item.
 	 */
 	public function column_thumb( $item ) {
-		$thumbnail_id = get_post_thumbnail_id($item['product_id']);
-		$image_url    = wp_get_attachment_url($thumbnail_id);
-			return sprintf( '<img style="width:52px;" src="' . $image_url . '"/>' );
+		$thumbnail_id = get_post_thumbnail_id( $item['product_id'] );
+		return wp_get_attachment_image( $thumbnail_id, array(52, 52), false, array( 'style' => 'width:52px;' ) );
 	}
 
 	/** Column Stock.
@@ -339,6 +338,9 @@ add_action( 'wp_ajax_eh_bep_ajax_table_data', 'eh_bep_ajax_data_callback' );
  * This function adds the jQuery script to the plugin's page footer
  */
 function admin_header() {
+	if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_GET['_wpnonce'] ) ) ) ) {
+		return;
+	}	
 	$page = ( isset( $_GET['page'] ) ) ? sanitize_text_field( wp_unslash( $_GET['page'] ) ) : false; // phpcs:ignore WordPress.Security.NonceVerification
 	if ( 'eh-bulk-edit-product-attr' !== $page ) {
 		return;

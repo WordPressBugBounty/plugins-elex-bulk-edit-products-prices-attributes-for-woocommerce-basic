@@ -1,0 +1,9 @@
+{
+    "name": "elula/elex-bulk-edit-products-prices-attributes-for-woocommerce-basic",
+    "autoload": {
+        "psr-4": {
+            "Elula\\ElexBulkEditProductsPricesAttributesForWoocommerceBasic\\": "src/"
+        }
+    },
+    "require": {}
+}
