@@ -28,10 +28,10 @@ class Elex_DataTables extends WP_List_Table {
 		$product_data = array();
 		if ( ! empty( $_products ) ) {
 			foreach ( $_products as $temp_id => $temp ) {
-				$temp_type  = ( WC()->version < '2.7.0' ) ? $temp->product_type : $temp->get_type();
-				$temp_title = ( WC()->version < '2.7.0' ) ? $temp->post->post_title : $temp->get_name();
+				$temp_type  = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->product_type : $temp->get_type();
+				$temp_title = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->post->post_title : $temp->get_name();
 				$temp_dim   = '-';
-				if ( WC()->version < '2.7.0' ) {
+				if ( version_compare( WC()->version, '2.7.0', '<' )) {
 					if ( $temp->get_dimensions() != null ) {
 						$temp_dim = $temp->get_dimensions();
 					}
@@ -41,7 +41,7 @@ class Elex_DataTables extends WP_List_Table {
 					}
 				}
 				$get_category = '';
-				if ( ( WC()->version > '2.7.0' ) &&  'variation' == $temp_type ) {
+				if ( ( version_compare( WC()->version, '2.7.0', '>' ) ) &&  'variation' == $temp_type ) {
 					$get_category = $temp->get_parent_id();
 				} else {
 					$get_category = $temp_id;
@@ -59,14 +59,14 @@ class Elex_DataTables extends WP_List_Table {
 					$product_data[ $i ]['product_type_meta'] = ( $temp->is_downloadable() != null ) ? 'Downloadable' : ( ( $temp->is_virtual() != null ) ? 'Virtual' : 'Item' );
 					$product_data[ $i ]['product_thumb']     = ( 0 != $meta_thumb ) ? wp_get_attachment_thumb_url( $meta_thumb ) : $placeholder;
 					$product_data[ $i ]['product_sku']       = ( $temp->get_sku() != null ) ? $temp->get_sku() : '-';
-					$product_data[ $i ]['product_category']  = ( WC()->version < '2.7.0' ) ? $temp->get_categories() : wc_get_product_category_list( $get_category );
+					$product_data[ $i ]['product_category']  = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->get_categories() : wc_get_product_category_list( $get_category );
 					$product_data[ $i ]['product_stock_status']   = ( $temp->get_stock_status() == 'instock' ) ? 'In Stock ' : ( $temp->get_stock_status() == 'onbackorder' ? 'On Backorder' : 'Out of Stock' );
 					$product_data[ $i ]['product_stock_quantity'] = ( $temp->get_stock_quantity() != null ) ? $temp->get_stock_quantity() : ' - ';
 					$product_data[ $i ]['product_dimensions']     = $temp_dim;
 					$product_data[ $i ]['product_weight']         = ( $temp->get_weight() != null ) ? $temp->get_weight() : '-';
 					$att                                      = $temp->get_attributes();
 					$product_data[ $i ]['product_attributes'] = '';
-					if ( WC()->version < '2.7.0' && 'variation' == $temp_type ) {
+					if ( version_compare( WC()->version, '2.7.0', '<' )&& 'variation' == $temp_type ) {
 						$att = $temp->get_variation_attributes();
 					}
 					if ( null != $att ) {
@@ -466,8 +466,8 @@ function elex_bep_get_first_products() {
 	$product_id     = array();
 	for ( $i = 0; $i < count( $product_all_id ); $i++ ) {
 		$temp      = wc_get_product( $product_all_id[ $i ] );
-		$temp_type = ( WC()->version < '2.7.0' ) ? $temp->product_type : $temp->get_type();
-		$temp_id   = ( WC()->version < '2.7.0' ) ? $temp->id : $temp->get_id();
+		$temp_type = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->product_type : $temp->get_type();
+		$temp_id   = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->id : $temp->get_id();
 		if ( 'simple' == $temp_type ) {
 			array_push( $product_id, $product_all_id[ $i ] );
 		}

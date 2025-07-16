@@ -350,18 +350,18 @@ function elex_bep_update_product_callback() {
 		$parent    = $temp;
 		$parent_id = $pid;
 		if ( ! empty( $temp ) && $temp->is_type( 'variation' ) ) {
-			$parent_id = ( WC()->version < '2.7.0' ) ? $temp->parent->id : $temp->get_parent_id();
+			$parent_id = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->parent->id : $temp->get_parent_id();
 			$parent    = wc_get_product( $parent_id );
 		}
 		
-		$temp_type  = ( WC()->version < '2.7.0' ) ? $temp->product_type : $temp->get_type();
-		$temp_title = ( WC()->version < '2.7.0' ) ? $temp->post->post_title : $temp->get_title();
+		$temp_type  = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->product_type : $temp->get_type();
+		$temp_title = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->post->post_title : $temp->get_title();
 		if ( 'simple' == $temp_type  || 'variation' == $temp_type || 'variable' == $temp_type ) {
 			$product_data                   = array();
 			$product_data['type']           = 'simple';
 			$product_data['title']          = $temp_title;
 			$product_data['sku']            = $temp->get_sku();
-			$product_data['catalog']        = ( WC()->version < '3.0.0' ) ? $temp->get_meta( '_visibility' ) : $temp->get_catalog_visibility();
+			$product_data['catalog']        = ( version_compare( WC()->version, '3.0.0', '<' ) ) ? $temp->get_meta( '_visibility' ) : $temp->get_catalog_visibility();
 			$ship_args                      = array( 'fields' => 'ids' );
 			$product_data['shipping']       = current( wp_get_object_terms( $pid, 'product_shipping_class', $ship_args ) );
 			$product_data['sale']           = (float) $temp->get_sale_price();
@@ -553,7 +553,7 @@ function elex_bep_update_product_callback() {
 				}
 			}		
 			if ( 'variation' != $temp_type ) {
-				if ( WC()->version < '3.0.0' ) {
+				if ( version_compare( WC()->version, '3.0.0', '<' ) ) {
 					$temp->set_catalog_visibility( $catalog_select );
 					$temp->save();
 				} else {

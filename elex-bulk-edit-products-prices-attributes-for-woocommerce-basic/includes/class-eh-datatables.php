@@ -49,10 +49,10 @@ class Eh_DataTables extends WP_List_Table {
 				if ( false === $temp ) {
 					continue;
 				}
-				$temp_type  = ( WC()->version < '2.7.0' ) ? $temp->product_type : $temp->get_type();
-				$temp_title = ( WC()->version < '2.7.0' ) ? $temp->post->post_title : $temp->get_name();
+				$temp_type  = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->product_type : $temp->get_type();
+				$temp_title = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->post->post_title : $temp->get_name();
 				if ( 'variation' === $temp_type ) {
-					$temp_title = ( WC()->version < '2.7.0' ) ? $temp->post->post_title : $temp->get_title();
+					$temp_title = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->post->post_title : $temp->get_title();
 					$count      = 0;
 					$attributes = $temp->get_attributes();
 					if ( ! empty( $attributes ) ) {
@@ -67,7 +67,7 @@ class Eh_DataTables extends WP_List_Table {
 					}
 				}
 				$temp_dim = '-';
-				if ( WC()->version < '2.7.0' ) {
+				if ( version_compare( WC()->version, '2.7.0', '<' )) {
 					if ( $temp->get_dimensions() !== null ) {
 						$temp_dim = $temp->get_dimensions();
 					}
@@ -77,14 +77,14 @@ class Eh_DataTables extends WP_List_Table {
 					}
 				}
 				$get_category = '';
-				if ( ( WC()->version > '2.7.0' ) && 'variation' === $temp_type ) {
+				if ( ( version_compare( WC()->version, '2.7.0', '>' ) ) && 'variation' === $temp_type ) {
 					$get_category = $temp->get_parent_id();
 				} else {
 					$get_category = $temp_id;
 				}
 				$parent_id = $temp_id;
 				if ( 'variation' === $temp_type ) {
-					$parent_id = ( WC()->version < '2.7.0' ) ? $temp->parent->id : $temp->get_parent_id();
+					$parent_id = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->parent->id : $temp->get_parent_id();
 				}
 				if ( 'simple' === $temp_type || 'variable' === $temp_type || 'variation' === $temp_type || 'external' === $temp_type ) {
 					$product                                 = wc_get_product( $temp_id );
@@ -98,20 +98,20 @@ class Eh_DataTables extends WP_List_Table {
 					$product_data[ $i ]['product_type_meta'] = ( $temp->is_downloadable() !== null ) ? 'Downloadable' : ( ( $temp->is_virtual() !== null ) ? 'Virtual' : 'Item' );
 					$product_data[ $i ]['product_thumb']     = ( 0 !== $meta_thumb ) ? wp_get_attachment_thumb_url( $meta_thumb ) : $placeholder;
 					$product_data[ $i ]['product_sku']       = ( $temp->get_sku() !== null ) ? $temp->get_sku() : '-';
-					$product_data[ $i ]['product_category']  = ( WC()->version < '2.7.0' ) ? $temp->get_categories() : wc_get_product_category_list( $get_category );
+					$product_data[ $i ]['product_category']  = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->get_categories() : wc_get_product_category_list( $get_category );
 					$product_data[ $i ]['product_stock_status']   = ( $temp->get_stock_status() === 'instock' ) ? 'In Stock ' : ( $temp->get_stock_status() === 'onbackorder' ? 'On Backorder' : 'Out of Stock' );
 					$product_data[ $i ]['product_stock_quantity'] = ( $temp->get_stock_quantity() !== null ) ? $temp->get_stock_quantity() : ' - ';
 					$product_data[ $i ]['product_dimensions']     = $temp_dim;
 					$product_data[ $i ]['product_weight']         = ( $temp->get_weight() !== null ) ? $temp->get_weight() : '-';
 					$att                                      = $temp->get_attributes();
 					$product_data[ $i ]['product_attributes'] = '';
-					if ( WC()->version < '2.7.0' && 'variation' === $temp_type ) {
+					if ( version_compare( WC()->version, '2.7.0', '<' )&& 'variation' === $temp_type ) {
 						$att = $temp->get_variation_attributes();
 					}
 					if ( null !== $att ) {
 						foreach ( $att as $key => $value ) {
 							if ( 'variation' === $temp_type ) {
-								$attrib_slug                              = ( WC()->version < '2.7.0' ) ? substr( $key, 10 ) : $key;
+								$attrib_slug                              = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? substr( $key, 10 ) : $key;
 								$product_data[ $i ]['product_attributes'] = ( null === $product_data[ $i ]['product_attributes'] ) ? wc_attribute_label( $attrib_slug, $temp ) : $product_data[ $i ]['product_attributes'] . ', ' . wc_attribute_label( $attrib_slug, $temp );
 							} else {
 								$attrib_slug                              = ! empty( $value['name'] ) ? $value['name'] : '';
@@ -630,8 +630,8 @@ function eh_bep_get_first_products() {
 		if ( false === $temp ) {
 			continue;
 		}
-		$temp_type = ( WC()->version < '2.7.0' ) ? $temp->product_type : $temp->get_type();
-		$temp_id   = ( WC()->version < '2.7.0' ) ? $temp->id : $temp->get_id();
+		$temp_type = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->product_type : $temp->get_type();
+		$temp_id   = ( version_compare( WC()->version, '2.7.0', '<' ) ) ? $temp->id : $temp->get_id();
 		if ( 'simple' === $temp_type || 'external' === $temp_type ) {
 			array_push( $product_id, $product_all_id[ $i ] );
 		}
