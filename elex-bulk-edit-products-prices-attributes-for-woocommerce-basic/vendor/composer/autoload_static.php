@@ -7,14 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit2717beb3c63a7616e1f1cf8564d66828
 {
     public static $prefixLengthsPsr4 = array (
-        'E' => 
+        'E' =>
         array (
             'Elula\\ElexBulkEditProductsPricesAttributesForWoocommerceBasic\\' => 62,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Elula\\ElexBulkEditProductsPricesAttributesForWoocommerceBasic\\' => 
+        'Elula\\ElexBulkEditProductsPricesAttributesForWoocommerceBasic\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
