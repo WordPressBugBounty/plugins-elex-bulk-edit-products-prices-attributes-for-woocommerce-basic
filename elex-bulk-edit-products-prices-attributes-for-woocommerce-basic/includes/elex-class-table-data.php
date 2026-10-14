@@ -251,6 +251,9 @@ class Elex_DataTables extends WP_List_Table {
 
 function elex_bep_ajax_data_callback() {
 	check_ajax_referer( 'ajax-eh-bep-nonce', '_ajax_eh_bep_nonce' );
+	if ( ! current_user_can( 'manage_woocommerce' ) ) {
+		wp_die( -1, 403 );
+	}
 	$obj = new Elex_DataTables();
 	$obj->input();
 	$obj->ajax_response();

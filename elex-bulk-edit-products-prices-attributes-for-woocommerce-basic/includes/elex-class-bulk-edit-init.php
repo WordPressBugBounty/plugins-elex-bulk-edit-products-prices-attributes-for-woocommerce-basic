@@ -49,6 +49,14 @@ class Elex_Bulk_Edit_Init extends Eh_Bulk_Edit_Products_Basic {
 	public function elex_bep_register_plugin_styles_scripts() {
 		include_once 'elex-ajax-apifunctions.php';
 		include_once 'elex-class-table-data.php';
+
+		if ( ( function_exists( 'wp_doing_ajax' ) && wp_doing_ajax() ) || ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
+			return;
+		}
+
+		if ( ! current_user_can( 'manage_woocommerce' ) ) {
+			return;
+		}
 		
 		// Get and sanitize the 'page' parameter
 		$page = ( isset( $_GET['page'] ) ) ? sanitize_text_field( wp_unslash( $_GET['page'] ) ) : false; // phpcs:ignore WordPress.Security.NonceVerification

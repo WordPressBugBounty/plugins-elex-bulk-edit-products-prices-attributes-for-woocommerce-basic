@@ -52,7 +52,8 @@ abstract class BaseAdapter {
 		$orderBys = '';
 		if ( isset( $statements['orderBys'] ) && is_array( $statements['orderBys'] ) ) {
 			foreach ( $statements['orderBys'] as $orderBy ) {
-				$orderBys .= $this->wrapSanitizer( $orderBy['field'] ) . ' ' . $orderBy['type'] . ', ';
+				$order_type = ( isset( $orderBy['type'] ) && strtoupper( trim( $orderBy['type'] ) ) === 'DESC' ) ? 'DESC' : 'ASC';
+				$orderBys  .= $this->wrapSanitizer( $orderBy['field'] ) . ' ' . $order_type . ', ';
 			}
 			$orderBys = trim( $orderBys, ', ' );
 			if ( $orderBys ) {
@@ -61,8 +62,8 @@ abstract class BaseAdapter {
 		}
 
 		// Limit and offset
-		$limit  = isset( $statements['limit'] ) ? 'LIMIT ' . $statements['limit'] : '';
-		$offset = isset( $statements['offset'] ) ? 'OFFSET ' . $statements['offset'] : '';
+		$limit  = isset( $statements['limit'] ) ? 'LIMIT ' . (int) $statements['limit'] : '';
+		$offset = isset( $statements['offset'] ) ? 'OFFSET ' . (int) $statements['offset'] : '';
 
 		// Having
 		list($havingCriteria, $havingBindings) = $this->buildCriteriaWithType( $statements, 'havings', 'HAVING' );
@@ -347,6 +348,35 @@ abstract class BaseAdapter {
 	}
 
 	/**
+	 * Whitelist of allowed SQL operators to prevent SQL injection.
+	 *
+	 * @var array
+	 */
+	protected $allowedOperators = array(
+		'=', '!=', '<>', '<', '<=', '>', '>=',
+		'LIKE', 'NOT LIKE', 'ILIKE', 'NOT ILIKE',
+		'REGEXP', 'NOT REGEXP', 'RLIKE', 'NOT RLIKE',
+		'BETWEEN', 'NOT BETWEEN', 'IN', 'NOT IN',
+		'IS', 'IS NOT', 'SOUNDS LIKE',
+		'&', '|', '^', '<<', '>>',
+	);
+
+	/**
+	 * Validate and sanitize SQL operator.
+	 *
+	 * @param string $operator
+	 * @return string
+	 * @throws Exception
+	 */
+	protected function validateOperator( $operator ) {
+		$op = strtoupper( preg_replace( '/\s+/', ' ', trim( (string) $operator ) ) );
+		if ( ! in_array( $op, $this->allowedOperators, true ) ) {
+			throw new \Exception( 'Invalid SQL operator: ' . $operator );
+		}
+		return $op;
+	}
+
+	/**
 	 * Build generic criteria string and bindings from statements, like "a = b and c = ?"
 	 *
 	 * @param      $statements
@@ -383,9 +413,10 @@ abstract class BaseAdapter {
 				$criteria .= $statement['joiner'] . ' (' . $queryObject->getSql() . ') ';
 			} elseif ( is_array( $value ) ) {
 				// where_in or between like query
-				$criteria .= $statement['joiner'] . ' ' . $key . ' ' . $statement['operator'];
+				$operator  = $this->validateOperator( $statement['operator'] );
+				$criteria .= $statement['joiner'] . ' ' . $key . ' ' . $operator;
 
-				switch ( $statement['operator'] ) {
+				switch ( $operator ) {
 					case 'BETWEEN':
 						$bindings  = array_merge( $bindings, $statement['value'] );
 						$criteria .= ' ? AND ? ';
@@ -402,16 +433,18 @@ abstract class BaseAdapter {
 						break;
 				}
 			} elseif ( $value instanceof Raw ) {
-				$criteria .= "{$statement['joiner']} {$key} {$statement['operator']} $value ";
+				$operator  = $this->validateOperator( $statement['operator'] );
+				$criteria .= "{$statement['joiner']} {$key} {$operator} $value ";
 			} else {
 				// Usual where like criteria
 
+				$operator = $this->validateOperator( $statement['operator'] );
 				if ( ! $bindValues ) {
 					// Specially for joins
 
 					// We are not binding values, lets sanitize then
 					$value     = $this->wrapSanitizer( $value );
-					$criteria .= $statement['joiner'] . ' ' . $key . ' ' . $statement['operator'] . ' ' . $value . ' ';
+					$criteria .= $statement['joiner'] . ' ' . $key . ' ' . $operator . ' ' . $value . ' ';
 				} elseif ( $statement['key'] instanceof Raw ) {
 					$criteria .= $statement['joiner'] . ' ' . $key . ' ';
 					$bindings  = array_merge( $bindings, $statement['key']->getBindings() );
@@ -420,7 +453,7 @@ abstract class BaseAdapter {
 
 					$valuePlaceholder = '?';
 					$bindings[]       = $value;
-					$criteria        .= $statement['joiner'] . ' ' . $key . ' ' . $statement['operator'] . ' '
+					$criteria        .= $statement['joiner'] . ' ' . $key . ' ' . $operator . ' '
 						. $valuePlaceholder . ' ';
 				}
 			}
@@ -453,7 +486,13 @@ abstract class BaseAdapter {
 
 		foreach ( $valueArr as $key => $subValue ) {
 			// Don't wrap if we have *, which is not a usual field
-			$valueArr[ $key ] = trim( $subValue ) == '*' ? $subValue : $this->sanitizer . $subValue . $this->sanitizer;
+			$trimmed = trim( $subValue );
+			if ( '*' === $trimmed ) {
+				$valueArr[ $key ] = $trimmed;
+			} else {
+				$escaped          = str_replace( $this->sanitizer, $this->sanitizer . $this->sanitizer, trim( $subValue, $this->sanitizer ) );
+				$valueArr[ $key ] = $this->sanitizer . $escaped . $this->sanitizer;
+			}
 		}
 
 		// Join these back with "." and return

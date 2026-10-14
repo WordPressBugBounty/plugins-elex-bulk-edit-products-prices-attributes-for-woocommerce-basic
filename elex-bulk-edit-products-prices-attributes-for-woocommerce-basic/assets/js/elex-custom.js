@@ -836,8 +836,8 @@ jQuery(function () {
         }
     }
 
-    jQuery("#attrib_name input[type='checkbox']").click(function () {
-        var display = jQuery('#attrib_name input[type=checkbox]:checked').length;
+    jQuery(document).on('click', "#attrib_name input[type='checkbox'], input[name='attrib_name']", function () {
+        var display = jQuery("input[name='attrib_name']:checked, #attrib_name input[type=checkbox]:checked").length;
         if (display == 0) {
             jQuery('#attribute_value_select').remove();
         } else {
@@ -855,8 +855,8 @@ jQuery(function () {
         }
     });
 
-    jQuery("#attrib_name_and input[type='checkbox']").click(function () {
-        var display = jQuery('#attrib_name_and input[type=checkbox]:checked').length;
+    jQuery(document).on('click', "#attrib_name_and input[type='checkbox'], input[name='attrib_name_and']", function () {
+        var display = jQuery("input[name='attrib_name_and']:checked, #attrib_name_and input[type=checkbox]:checked").length;
         if (display == 0) {
             jQuery('#attribute_value_select_and').remove();
         } else {
@@ -1716,8 +1716,11 @@ function clear_filters() {
 }
 function getValue_attrib_name() {
     var chkArray = [];
-    jQuery("#attrib_name input:checked").each(function () {
-        chkArray.push(jQuery(this).val());
+    jQuery("input[name='attrib_name']:checked, #attrib_name input:checked").each(function () {
+        var val = jQuery(this).val();
+        if (jQuery.inArray(val, chkArray) === -1) {
+            chkArray.push(val);
+        }
     });
     var selected;
     selected = chkArray.join(',') + ",";
@@ -1729,8 +1732,11 @@ function getValue_attrib_name() {
 }
 function getValue_attrib_name_and() {
     var chkArray = [];
-    jQuery("#attrib_name_and input:checked").each(function () {
-        chkArray.push(jQuery(this).val());
+    jQuery("input[name='attrib_name_and']:checked, #attrib_name_and input:checked").each(function () {
+        var val = jQuery(this).val();
+        if (jQuery.inArray(val, chkArray) === -1) {
+            chkArray.push(val);
+        }
     });
     var selected;
     selected = chkArray.join(',') + ",";
